@@ -63,7 +63,6 @@ font-family: 'Poppins', 'sans-serif';
     #link, .link, .flink{
       text-decoration: none;
       color:#0A4076;
-      background-color: transparent;
     }
 
     .link{

@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
     
-    margin: auto;
-    max-width:100%;
+    width:100%;
     height: ${(props) => props.height};
     padding: ${(props) => props.padding};
-    display:grid;
+    display:${(props) => props.display};
+    flex-direction:${(props) => props.fd};
+    justify-content:${(props) => props.justify};
     place-items:center;
     align-content:center;
     font-family: "Poppins", "sans-serif";
@@ -32,7 +33,7 @@ export const Container = styled.div`
         width: 100%;
         margin: auto;
         font-size: 0.7rem;
-        padding: 2% 0%;
+        padding: 2% 0% 4% 0%;
         font-weight: 300;
         opacity: 0.8;
     }
@@ -50,7 +51,8 @@ export const Flex = styled.div`
     padding: ${(props) => props.padding};
     place-items: ${(props) => props.place};
     position: ${(props) => props.position};
-    z-index: 2;
+    height: ${(props) => props.height};
+   
 
     img{
         width: 48%;
@@ -112,10 +114,10 @@ export const Ulist = styled.ul`
 export const HeroImg = styled.div`
     display:flex;
     font-family: 'Poppins', 'sans-serif';
+    width: 100%;
     
     img{
         height: 65vh;
-        margin: 0% 5% 0% 0%;
     }
 `
 // ABOUT SECTION

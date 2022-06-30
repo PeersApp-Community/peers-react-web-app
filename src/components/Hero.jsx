@@ -7,8 +7,8 @@ import Google from '../Images/Google_Play_Store_badge_EN.svg.png'
 import apple from '../Images/apple-store.png'
 const Hero = () => {
   return (
-    <Container height="80vh">
-        <Grid padding="33% 0% 0% 0%">
+    <Container height="60vh" display="flex" fd="column">
+        <Grid>
             <h3>Peers App</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Ad consequuntur, earum maiores facilis saepe ratione. </p>
             <HeroImg>
@@ -18,7 +18,7 @@ const Hero = () => {
             </HeroImg>
         </Grid>
          
-        <Flex padding="3% 0%">
+        <Flex padding="3% 0%" justify="space-between">
             <img src={Google} alt='' />
             <img src={apple} alt='' />
         </Flex>
