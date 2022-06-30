@@ -17,7 +17,6 @@ const Home = () => {
        <FAQ />
        <Download />
        <Footer />
-
     </div>
   )
 }

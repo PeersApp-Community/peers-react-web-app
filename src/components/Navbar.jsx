@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import logo from "../Images/photo_2022-06-11_15-53-30_1-removebg-preview.png"
 import { Button, Flex, Ulist, NavImg } from './styles/learnStyles';
-import GlobalStyle from '../GlobalStyle';
+import GlobalStyle from './styles/GlobalStyle';
 const Navbar = () => {
   return (
     <Flex padding=" 2% 0%" justify="space-evenly" position="absolute" width="100%" place="center">
