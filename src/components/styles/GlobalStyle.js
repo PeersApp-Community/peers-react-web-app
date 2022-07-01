@@ -60,18 +60,60 @@ font-family: 'Poppins', 'sans-serif';
       font-size: 1rem;
     }
 
-    #link, .link, .flink{
+    #link, .link, .flink {
       text-decoration: none;
       color:#0A4076;
     }
 
-    .link{
+    .link, .slink{
       color: #fff;
     }
 
     .flink{
       color:#000;
     }
+
+    .slink{
+      font-size: 1.2rem;
+    }
+
+
+    .circle1, .circle2{
+      position: absolute;
+      font-size: 30rem;
+      opacity: 0.5;
+    }
+
+    .circle1{
+      top: 45%;
+      right: 0%;
+      color: #000;
+      z-index: -1;
+    }
+
+    .circle2{
+      top: 180%;
+      left: -5%;
+      color: #0A4076;
+    }
+
+    // USESTATE CLASSES
+    .none {
+      @media screen and (max-width: 1200px){
+        display: none;
+      }
+      
+    }
+
+    .show{
+
+      @media screen and (max-width: 1200px){
+        display: grid;
+        width: 100%;
+        background-color: #fff;
+      }
+    }
+
   }
 `;
 

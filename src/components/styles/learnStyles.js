@@ -19,7 +19,7 @@ export const Container = styled.div`
         margin: 10% 0%;
     }
 
-    h3, p{
+    h3,h4, p{
         color:#fff;
         text-align: center;
     }
@@ -29,17 +29,26 @@ export const Container = styled.div`
         font-weight: 500;
     }
 
+    h4{
+
+    }
+
     p{
         width: 100%;
         margin: auto;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         padding: 2% 0% 4% 0%;
         font-weight: 300;
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     img{
         height: 40vh;
+    }
+
+    @media screen and (max-width: 1200px){
+        display: grid;
+        width: 100%;
     }
 `
 
@@ -63,6 +72,14 @@ export const Flex = styled.div`
         padding: 0% 20%;
     }
 
+    input{
+        width: 80%;
+        background-color: #efefef;
+        border-radius: 5px;
+        padding: 2% 5%;
+
+    }
+
 `
 
 export const Grid= styled.div`
@@ -80,7 +97,35 @@ export const Button = styled.button`
     padding: 0.5rem 1.0rem;
     text-decoration: none;
     font-family: 'Poppins', 'sans-serif';
+
 `
+
+// NAVBAR SECTION
+
+export const Nav = styled.nav`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media screen and (max-width: 1200px){
+        
+    }
+
+`
+
+export const Navbutton = styled.div`
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    place-items: center;
+
+    @media screen and (max-width: 1200px){
+        display: grid;
+        width: 100%;
+    }
+
+`
+    
 
 export const NavImg = styled.div`
     background-color: #fff;
@@ -91,6 +136,13 @@ export const NavImg = styled.div`
         width: 100%;
         height: 10vh;
     }
+
+    @media screen and (max-width: 1200px){
+        img {
+            width: 100%;
+            height: 5vh;
+        }
+    }
 `
 
 export const Ulist = styled.ul`
@@ -100,6 +152,9 @@ export const Ulist = styled.ul`
     width: ${(props) => props.width};
     height: ${(props) => props.height};
     flex-direction: ${(props) => props.fd};
+    position: ${(props) => props.position};
+    top: 15%;
+    left: 8%;
 
 
     li{
@@ -109,17 +164,10 @@ export const Ulist = styled.ul`
         font-size: 0.8rem;
         text-align:center;
     }
+
 `
 
-export const HeroImg = styled.div`
-    display:flex;
-    font-family: 'Poppins', 'sans-serif';
-    width: 100%;
-    
-    img{
-        height: 65vh;
-    }
-`
+
 // ABOUT SECTION
 
 export const Section = styled.div`

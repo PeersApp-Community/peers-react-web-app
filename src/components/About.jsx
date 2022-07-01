@@ -3,10 +3,11 @@ import { AboutFlex, Section, Button, Grid, Text } from './styles/learnStyles'
 import Group1 from '../Images/Group 1.png'
 import Group6 from '../Images/Group 6.png'
 import Group7 from '../Images/Group 7.png'
+import {BsFillRecordCircleFill} from "react-icons/bs";
 
 const About = () => {
   return (
-    <Section mt="26%">
+    <Section mt="0%">
       <Grid>
         <h3>About Us</h3>
 
@@ -39,7 +40,8 @@ const About = () => {
         </AboutFlex>
         
       </Grid>
-        
+      <BsFillRecordCircleFill className='circle1' />
+      <BsFillRecordCircleFill className='circle2' />
     </Section>
   )
 }
