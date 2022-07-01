@@ -6,7 +6,7 @@ import image3 from '../Images/pexels-jimmy-jimmy-1484794.jpg';
 import image4 from '../Images/pexels-engin-akyurt-1441151.jpg'
 const Testimonials = () => {
   return (
-    <Section>
+    <Section smMt='200px'>
         <Grid width="100%">
             <h3>Testimonials</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deleniti ipsum voluptate ipsam. Libero corrupti quasi <br /> eius dolorem a odit laborum corporis</p>

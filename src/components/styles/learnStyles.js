@@ -40,6 +40,10 @@ export const Container = styled.div`
     img{
         height: 40vh;
     }
+
+    @media (max-width: 769px) {
+        height: ${props => props.heightSM};
+    }
 `
 
 export const Flex = styled.div`
@@ -57,8 +61,12 @@ export const Flex = styled.div`
         height: 7vh;
     }
 
-    @media screen and (max-width: 769px){
-        padding: 0% 20%;
+    @media (max-width: 769px) {
+        flex-direction: ${props => props.smDirection};
+        align-items: ${props => props.smAlign};
+        padding: ${props => props.smPadding};
+        margin-top: ${props => props.smMt};
+        justify-content: ${props => props.smJustify};
     }
 
 `
@@ -107,6 +115,10 @@ export const Ulist = styled.ul`
         font-size: 0.8rem;
         text-align:center;
     }
+
+    @media (max-width: 769px) {
+        gap: 10px;
+    }
 `
 
 export const HeroImg = styled.div`
@@ -116,6 +128,14 @@ export const HeroImg = styled.div`
     img{
         height: 65vh;
         margin: 0% 5% 0% 0%;
+    }
+
+    @media (max-width: 769px) {
+        flex-direction: column;
+        gap: 30px;
+        img {
+          height: 80vh;
+        }
     }
 `
 // ABOUT SECTION
@@ -137,7 +157,9 @@ export const Section = styled.div`
         text-align: center;
     }
 
-
+    @media (max-width: 769px) {
+        margin-top: ${props => props.smMt};
+    }
 `
 
 export const AboutFlex = styled.div`
@@ -147,6 +169,16 @@ export const AboutFlex = styled.div`
     justify-content:space-evenly;
     padding: 3% 15%;
 
+    @media (max-width: 769px) {
+        flex-direction: ${props => props.reverse || "column"};
+        align-items: center;
+        margin-top: ${props => props.smMt};
+        img {
+          width: 300px;
+          height: 100%;
+          margin-bottom: 20px;
+        }
+    }
 `
 
 export const Text = styled.div`
@@ -167,6 +199,12 @@ export const Text = styled.div`
         text-align:left;
     }
 
+    @media (max-width: 769px) {
+        margin-bottom: ${props => props.smMb};
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 // TESTIMONIALS SECTION
@@ -176,6 +214,10 @@ export const TestFlex = styled.div`
     flex-wrap: wrap;
     justify-content: center;
 
+    @media (max-width: 769px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 export const TestCard = styled.div`
@@ -199,6 +241,11 @@ export const TestCard = styled.div`
 
     &:hover {
         background-color: #fff;
+    }
+
+    @media (max-width: 769px) {
+        width: 80%;
+        margin: 2%;
     }
 `
    
@@ -242,6 +289,10 @@ export const TestContainer= styled.div`
         text-align:left;
         margin-left: 10%;
     }
+
+    @media (max-width: 769px) {
+        width: 80%;
+    }
  `
 //  SUBSCRIBE Section
 export const SubFlex = styled.div`
@@ -278,7 +329,23 @@ export const SubFlex = styled.div`
         border-radius: 5px;
         color:white;
     }
-        
+
+    @media (max-width: 769px) {
+        margin-top: ${props => props.smMt};
+        flex-direction: ${props => props.smDirection};
+        padding: ${props => props.smPadding};
+        height: max-content;
+        h5 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        button {
+          margin-top: 15px;
+        }
+    }  
 `
 
 export const FooterFlex = styled.div`
@@ -288,6 +355,11 @@ export const FooterFlex = styled.div`
     margin-top: 5%;
     padding:0% 3%;
 
+    @media (max-width: 769px) {
+        flex-direction: column;
+        margin-top: 100px;
+        height: max-content;
+    }
 `
 
 export const FooterSection =styled.section`
@@ -311,6 +383,12 @@ export const FooterSection =styled.section`
         font-size: 0.8rem;
     }
 
+    @media (max-width: 769px) {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 `
 
 export const Copyright = styled.div`
@@ -319,4 +397,8 @@ export const Copyright = styled.div`
     display: grid;
     place-items: center;
     color: #fff;
+
+    @media (max-width: 769px) {
+        height: 8vh;
+    }
 `

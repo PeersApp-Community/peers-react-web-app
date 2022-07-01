@@ -10,7 +10,7 @@ const About = () => {
       <Grid>
         <h3>About Us</h3>
 
-        <AboutFlex>
+        <AboutFlex smMt='100px'>
           <img src={Group1} alt='' />
           <Text>
             <h4>Learn</h4>
@@ -19,7 +19,7 @@ const About = () => {
           </Text>
         </AboutFlex>
 
-        <AboutFlex>
+        <AboutFlex smMt='250px' reverse='column-reverse'>
           <Text>
             <h4>Network</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> A iure pariatur placeat odio cum ut est accusamus totam. </p>
@@ -29,7 +29,7 @@ const About = () => {
         </AboutFlex>
 
         
-        <AboutFlex>
+        <AboutFlex smMt='300px'>
           <img src={Group6} alt='' />
           <Text>
             <h4>Redefine Your <br /> School Experience</h4>

@@ -5,19 +5,19 @@ import apple from '../Images/apple-store.png';
 import Group7 from '../Images/Group 7.png';
 const Download = () => {
   return (
-    <Section mt="5%">
+    <Section mt="5%" smMt='250px'>
         <AboutFlex>
             <Text>
                 <h4>Download App</h4>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ipsum.</p>
-                <Flex place="left" width="100%" justify="space-between" padding='0% 20% 0% 0%'>
+                <Flex place="left" width="100%" justify="space-between" padding='0% 20% 0% 0%' smDirection='column' smPadding='0' smAlign='center'>
                     <img src={Google} alt='' />
                     <img src={apple} alt='' />
                 </Flex>
             </Text>
            <img src={Group7} alt="" />
         </AboutFlex>
-        <SubFlex>
+        <SubFlex smMt='200px' smDirection='column' smPadding='20px'>
             <div>
                 <h5>Subscribe to get updated</h5>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores inventore alias, <br /> modi deserunt exercitationem excepturi deleniti maxime eius ducimus nemo harum nam, <br /> obcaecati unde eaque nobis repudiandae aliquam fugiat.</p>

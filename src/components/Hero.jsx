@@ -7,7 +7,7 @@ import Google from '../Images/Google_Play_Store_badge_EN.svg.png'
 import apple from '../Images/apple-store.png'
 const Hero = () => {
   return (
-    <Container height="80vh">
+    <Container height="80vh" heightSM='100%'>
         <Grid padding="33% 0% 0% 0%">
             <h3>Peers App</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Ad consequuntur, earum maiores facilis saepe ratione. </p>
