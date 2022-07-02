@@ -11,8 +11,9 @@ const Hero = () => {
       <Grid padding="33% 0% 0% 0%">
         <h3>Peers App</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Ad
-          consequuntur, earum maiores facilis saepe ratione.{" "}
+          We aim to make virtual learning and communication easier and more
+          accessible to students across the world and from different educational
+          backgrounds.
         </p>
         <HeroImg>
           <img src={Group1} alt="" />
@@ -30,8 +31,9 @@ const Hero = () => {
         <Grid padding="33% 0% 0% 0%">
           <h3>Peers App</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Ad
-            consequuntur, earum maiores facilis saepe ratione.{" "}
+            We aim to make virtual learning and communication easier <br /> and more
+            accessible to students across the world and from different
+            educational backgrounds.
           </p>
           <HeroImg>
             <img src={Group1} alt="" />
