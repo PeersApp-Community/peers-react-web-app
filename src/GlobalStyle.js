@@ -4,6 +4,9 @@ const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 font-family: 'Poppins', 'sans-serif';
 
+html {
+  scroll-behavior: smooth;
+}
 
   :root {
   --bg-light:	 #99ff99;
