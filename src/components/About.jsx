@@ -2,7 +2,7 @@ import React from "react";
 import { AboutFlex, Section, Button, Grid, Text } from "./styles/learnStyles";
 import Group1 from "../Images/Group 1.png";
 import Group6 from "../Images/Group 6.png";
-import Group7 from "../Images/Group 7.png";
+// import Group7 from "../Images/Group 7.png";
 
 const About = () => {
   return (
@@ -45,7 +45,7 @@ const About = () => {
         {/* 
         <AboutFlex>
           <img src={Group6} alt="" /> */}
-        <AboutFlex smMt="300px">
+        {/* <AboutFlex smMt="300px">
           <img src={Group6} alt="" />
 
           <Text>
@@ -58,8 +58,7 @@ const About = () => {
               Learn More
             </Button>
           </Text>
-        </AboutFlex>{" "}
-        */}
+        </AboutFlex>{" "} */}
       </Grid>
     </Section>
   );
