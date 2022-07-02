@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+font-family: 'Poppins', 'sans-serif';
+
+html {
+  scroll-behavior: smooth;
+}
 
   :root {
   --bg-light:	 #99ff99;
@@ -31,14 +37,13 @@ const GlobalStyle = createGlobalStyle`
   border: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Abel', sans-serif;
   }
 
   body {
     margin: 0;
     padding: 0;
-    background-color: var(--bg-darker);
-    color: var(--bg-light);
+    color: #222222;
+    ;
 
     .head{
       font-size: 2rem;
@@ -47,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
     }
     
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     h3 {
@@ -56,6 +61,20 @@ const GlobalStyle = createGlobalStyle`
 
     p {
       font-size: 1rem;
+    }
+
+    #link, .link, .flink{
+      text-decoration: none;
+      color:#0A4076;
+      background-color: transparent;
+    }
+
+    .link{
+      color: #fff;
+    }
+
+    .flink{
+      color:#000;
     }
   }
 `;
