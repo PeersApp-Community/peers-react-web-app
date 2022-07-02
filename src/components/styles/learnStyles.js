@@ -27,6 +27,7 @@ export const Container = styled.div`
     h3{
         font-size: 3rem;
         font-weight: 500;
+       
     }
 
     h4{
@@ -37,7 +38,7 @@ export const Container = styled.div`
         width: 100%;
         margin: auto;
         font-size: 0.9rem;
-        padding: 2% 0% 4% 0%;
+        padding: 1% 0% 2% 0%;
         font-weight: 300;
         opacity: 0.9;
     }
@@ -46,9 +47,20 @@ export const Container = styled.div`
         height: 40vh;
     }
 
-    @media screen and (max-width: 1200px){
-        display: grid;
-        width: 100%;
+    @media (max-width: 769px) {
+        height: ${props => props.heightSM};
+        h3{
+            font-size: 2rem;
+        }
+
+        h4{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        p{
+            font-size: 1rem;
+        }
     }
 `
 
@@ -61,15 +73,12 @@ export const Flex = styled.div`
     place-items: ${(props) => props.place};
     position: ${(props) => props.position};
     height: ${(props) => props.height};
+    margin:auto;
    
 
     img{
         width: 48%;
-        height: 7vh;
-    }
-
-    @media screen and (max-width: 769px){
-        padding: 0% 20%;
+        height: 10vh;
     }
 
     input{
@@ -80,6 +89,24 @@ export const Flex = styled.div`
 
     }
 
+
+    @media screen and (max-width: 769px) {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28vh;
+
+        img {
+            width: 100%;
+            height: 10vh;
+          }
+
+          input{
+            width: 100%;
+    
+        }
+        
+    }
+ 
 `
 
 export const Grid= styled.div`
@@ -87,16 +114,33 @@ export const Grid= styled.div`
     padding: ${(props) => props.padding};
     position: relative;
     width:  ${(props) => props.width};
+    margin: auto;
+
+    input{
+        width: 100%;
+        background-color: #efefef;
+        border-radius: 5px;
+        padding: 2% 5%;
+
+    }
 `
 
 export const Button = styled.button`
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
     background-color: ${(props) => props.bg};
     color: ${(props) => props.color};
     border-radius: 5px;
-    width: auto;
-    padding: 0.5rem 1.0rem;
+    height: 6vh;
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
     font-family: 'Poppins', 'sans-serif';
+    font-size: 0.8rem;
+
+    @media screen and (max-width: 1024px){
+       height: auto;
+
+       
+    }
 
 `
 
@@ -104,68 +148,76 @@ export const Button = styled.button`
 
 export const Nav = styled.nav`
     display: flex;
+    background-color: #0A4076;
     justify-content: space-evenly;
     align-items: center;
-
-    @media screen and (max-width: 1200px){
-        
-    }
-
+    width:100%;
+    padding: 1% 5%;
+    height: auto;
 `
-
-export const Navbutton = styled.div`
-    display: flex;
-    width: 30%;
-    justify-content: space-evenly;
-    place-items: center;
-
-    @media screen and (max-width: 1200px){
-        display: grid;
-        width: 100%;
-    }
-
-`
-    
 
 export const NavImg = styled.div`
-    background-color: #fff;
-    border-radius:50%;
-    padding: 0.5%;
-
+    flex: 30%;
+    
     img{
-        width: 100%;
-        height: 10vh;
+        width:70px;
+        height:70px;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 1%;
     }
+`
 
-    @media screen and (max-width: 1200px){
-        img {
-            width: 100%;
-            height: 5vh;
-        }
+export const NavLink =styled.div`
+    display: flex;
+    flex: 70%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 769px){
+        display: grid;
+        justify-content: center;
+
     }
 `
 
 export const Ulist = styled.ul`
-    display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    width: ${(props) => props.width};
-    height: ${(props) => props.height};
-    flex-direction: ${(props) => props.fd};
-    position: ${(props) => props.position};
-    top: 15%;
-    left: 8%;
-
-
+    display:flex;
+    justify-content: space-between;;
+    width:${(props) => props.width};
+    height:${(props) => props.height};
+    flex-direction:${(props) => props.fd};
+    text-align:center;
+    
     li{
         list-style-type: none;
-        font-family: 'Poppins', 'sans-serif';
-        font-weight:300;
-        font-size: 0.8rem;
-        text-align:center;
+        
+    }
+  
+    @media screen and (max-width: 1025px){
+        justify-content: space-evenly;
+        width: 100%;
+    }
+`
+
+export const Navbutton = styled.div`
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+
+    @media screen and (max-width: 1025px){
+        width: 45%;
     }
 
-`
+    @media screen and (max-width: 769px){
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 10vh;
+    }
+` 
+// Hero Section
+
 
 
 // ABOUT SECTION
@@ -182,12 +234,25 @@ export const Section = styled.div`
         padding:2% 0%;
     }
 
+
     p{
         font-size: 0.7rem;
         text-align: center;
     }
 
+    @media (max-width: 769px) {
+        margin-top: ${props => props.smMt};
+        h3{
+            font-size: 2rem;
+        }
 
+        p{
+            width: 90%;
+            margin: auto;
+        }
+
+       
+    }
 `
 
 export const AboutFlex = styled.div`
@@ -197,6 +262,17 @@ export const AboutFlex = styled.div`
     justify-content:space-evenly;
     padding: 3% 15%;
 
+    @media (max-width: 769px) {
+        flex-direction: ${(props) => props.fd};
+        align-items: center;
+        margin-top: 10%;
+        padding: 0%;
+        height: ${props => props.smHeight};
+        img {
+          width: 50%;
+          height: 70vh;
+        }
+    }
 `
 
 export const Text = styled.div`
@@ -217,6 +293,26 @@ export const Text = styled.div`
         text-align:left;
     }
 
+    @media (max-width: 769px) {
+        margin-bottom: ${props => props.smMb};
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        h4{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color:#0A4076;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        p{
+            text-align: center;
+        }
+
+    }
 `
 
 // TESTIMONIALS SECTION
@@ -226,6 +322,10 @@ export const TestFlex = styled.div`
     flex-wrap: wrap;
     justify-content: center;
 
+    @media (max-width: 769px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 export const TestCard = styled.div`
@@ -249,6 +349,11 @@ export const TestCard = styled.div`
 
     &:hover {
         background-color: #fff;
+    }
+
+    @media (max-width: 769px) {
+        width: 80%;
+        margin: 2%;
     }
 `
    
@@ -275,24 +380,58 @@ export const TestContainer= styled.div`
  
  `
  export const Article = styled.div`
-    display: flex;
-    justify-content:left;
-    align-items: center;
     background-color:#efefef;
-    width: 30%;
-    height: 7vh;
-    margin: 1% auto;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    padding: 1% 0%;
+
+    header{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+
 
     span{
-        font-size:1.5rem;
-        margin-left: 15%;
+        font-size: 1.5rem;
     }
 
     h5{
         text-align:left;
-        margin-left: 10%;
+    }
+
+    p{
+        width: 80%;
+        margin:auto;
+    }
+
+    @media (max-width: 769px) {
+        width: 80%;
     }
  `
+//  DOWNDLOAD SECTION
+export const DownloadImg = styled.div`
+    display: flex;
+    img{
+        width: 50%;
+        height: 10vh;
+    }
+
+    @media screen and (max-width: 769px){
+        margin-auto;
+
+        img{
+            width: 50%;
+            height: 10vh;
+        }
+
+    }
+
+`
+
 //  SUBSCRIBE Section
 export const SubFlex = styled.div`
     display: flex;
@@ -328,7 +467,24 @@ export const SubFlex = styled.div`
         border-radius: 5px;
         color:white;
     }
-        
+
+    @media (max-width: 769px) {
+        margin-top: ${props => props.smMt};
+        flex-direction: ${props => props.smDirection};
+        padding: ${props => props.smPadding};
+        height: max-content;
+        h5 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        p {
+          font-size: 0.8rem;
+          text-align: center;
+        }
+        button {
+          margin-top: 15px;
+        }
+    }  
 `
 
 export const FooterFlex = styled.div`
@@ -338,6 +494,11 @@ export const FooterFlex = styled.div`
     margin-top: 5%;
     padding:0% 3%;
 
+    @media (max-width: 769px) {
+        flex-direction: column;
+        margin-top: 100px;
+        height: max-content;
+    }
 `
 
 export const FooterSection =styled.section`
@@ -361,6 +522,16 @@ export const FooterSection =styled.section`
         font-size: 0.8rem;
     }
 
+    @media (max-width: 769px) {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+
+        p{
+            text-align: center;
+        }
+    }
 `
 
 export const Copyright = styled.div`
@@ -369,4 +540,8 @@ export const Copyright = styled.div`
     display: grid;
     place-items: center;
     color: #fff;
+
+    @media (max-width: 769px) {
+        height: 8vh;
+    }
 `

@@ -7,11 +7,11 @@ import {BsFillRecordCircleFill} from "react-icons/bs";
 
 const About = () => {
   return (
-    <Section mt="0%">
+    <Section mt="0%" smMt="5%">
       <Grid>
         <h3>About Us</h3>
 
-        <AboutFlex>
+        <AboutFlex smHeight="auto" fd="column" >
           <img src={Group1} alt='' />
           <Text>
             <h4>Learn</h4>
@@ -20,7 +20,7 @@ const About = () => {
           </Text>
         </AboutFlex>
 
-        <AboutFlex>
+        <AboutFlex smHeight="auto" fd="column-reverse" >
           <Text>
             <h4>Network</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> A iure pariatur placeat odio cum ut est accusamus totam. </p>
@@ -30,7 +30,7 @@ const About = () => {
         </AboutFlex>
 
         
-        <AboutFlex>
+        <AboutFlex smHeight="auto" fd="column">
           <img src={Group6} alt='' />
           <Text>
             <h4>Redefine Your <br /> School Experience</h4>

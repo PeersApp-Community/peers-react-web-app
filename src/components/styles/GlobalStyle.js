@@ -85,33 +85,44 @@ font-family: 'Poppins', 'sans-serif';
     }
 
     .circle1{
-      top: 45%;
+      top: 75%;
       right: 0%;
       color: #000;
       z-index: -1;
+
+      @media screen and (max-width: 769px){
+        display: none;
+      }
+
+
     }
 
     .circle2{
       top: 180%;
       left: -5%;
       color: #0A4076;
+
+      
+      @media screen and (max-width: 769px){
+        display:none;
+      }
+
     }
 
     // USESTATE CLASSES
     .none {
       @media screen and (max-width: 1200px){
-        display: none;
+        visiibilty: hidden;
       }
       
     }
 
     .show{
-
       @media screen and (max-width: 1200px){
-        display: grid;
-        width: 100%;
-        background-color: #fff;
+        visiibilty: visible;
+
       }
+    
     }
 
   }

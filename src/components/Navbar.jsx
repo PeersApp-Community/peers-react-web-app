@@ -1,41 +1,38 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react'
+import {Link, } from 'react-router-dom'
 import logo from "../Images/photo_2022-06-11_15-53-30_1-removebg-preview.png"
-import { Button, Flex, Ulist, NavImg, Container, Nav, Navbutton } from './styles/learnStyles';
-import {FaBars} from "react-icons/fa";
-
+import {  Ulist, NavImg, Nav, Navbutton, NavLink } from './styles/learnStyles';
 import GlobalStyle from './styles/GlobalStyle';
+
 const Navbar = () => {
-  const [show, setShow] = useState(false);
-  console.log(show);
+
   return (
-    <Container display='flex' justify="space-evenly" padding="2% 0%" bg="yellow" height="auto">
+
+    <Nav className="navbar navbar-expand-lg navbar-dark border-bottom">
         <GlobalStyle />
-        
-        <Nav >
-          <NavImg>
-                <img src={logo} alt=" " />
-          </NavImg>
 
-          <FaBars className='slink' onClick={() => setShow(!show)} />
+        <NavImg>
+          <img src={logo} alt=" " />
+        </NavImg>
 
-          <div className={`${show ? 'none' : 'show'}`}>
-            <Ulist width="30%">
-                <li><Link to="" className='link'>Home</Link></li>
-                <li><Link to="" className='link'>About</Link></li>
-                <li><Link to="" className='link'>Testimonials</Link></li>
-                <li><Link to="" className='link'>Contact</Link></li>
-            </Ulist>
-              
-            <Navbutton>
-                <Button><Link to="" id='link'> Login </Link></Button>
-                <Button><Link to="" id='link'> Sign up </Link></Button>
-            </Navbutton>
-          </div>
-         
-        </Nav>
-
-    </Container>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+       
+        <NavLink  class="collapse navbar-collapse" id="collapsibleNavbar">
+          <Ulist width="50%" className='navbar-nav'>
+              <li className='nav-item'><Link to="/" className='nav-link text-light link'>Home</Link></li>
+              <li className='nav-item'><Link to="about" className='nav-link text-light link'>About</Link></li>
+              <li className='nav-item'><Link to="testimonials" className='nav-link text-light link'>Testimonials</Link></li>
+              <li className='nav-item'><Link to="download" className='nav-link text-light link'>Download</Link></li>
+          </Ulist>
+          <Navbutton>
+            <button type="button" class="btn btn-sm btn-dark px-4"> Login</button> 
+            <button type="button" class="btn btn-sm btn-dark px-4 "> Sign Up</button>
+          </Navbutton>
+        </NavLink>
+   
+    </Nav>
   )
 }
 
