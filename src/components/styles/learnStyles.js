@@ -392,6 +392,7 @@ export const Article = styled.div`
       h5 {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         width: 100%;
         height: 10vh;
         font-size: 100%;

@@ -123,8 +123,7 @@ const FAQ = () => {
                 <span>
                   <GrFormAdd onMouseOver={() => setToggle5(!toggle5)} />
                 </span>{" "}
-                Who can see my personal information like <br /> my email
-                address, phone number, etc?
+                Who can see my personal information ?
               </h5>
             </header>
 
@@ -168,7 +167,7 @@ const FAQ = () => {
                 <span>
                   <GrFormAdd onMouseOver={() => setToggle7(!toggle7)} />
                 </span>{" "}
-                Is there anyone I can talk to incase of questions or complaints?
+                Is there anyone to talk to incase of questions or complaints?
               </h5>
             </header>
 
