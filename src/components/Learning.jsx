@@ -4,7 +4,7 @@ import connect from "../Images/Onboarding 2.png";
 import redefine from "../Images/Onboarding 3.png";
 import { Container, Flex, Button } from "./styles/learnStyles";
 import { Link } from "react-router-dom";
-import GlobalStyle from './styles/GlobalStyle';
+import GlobalStyle from '../GlobalStyle';
 
 const Learning = () => {
   const [screen1, setScreen1] = useState(true);

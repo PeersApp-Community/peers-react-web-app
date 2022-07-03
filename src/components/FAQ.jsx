@@ -1,6 +1,7 @@
 import React, { useState, use } from "react";
 import { Grid, Section, FAQS, Article } from "./styles/learnStyles";
 import { GrFormAdd } from "react-icons/gr";
+
 const FAQ = () => {
   const [toggle, setToggle] = useState(true);
   const [toggle1, setToggle1] = useState(true);

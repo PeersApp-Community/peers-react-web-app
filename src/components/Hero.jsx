@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Container,
   Grid,
@@ -28,10 +29,14 @@ const Hero = () => {
         <h3>Peers App</h3>
         <h4>Coming Soon! </h4>
         <p style={{ padding: "5px" }}>
+
+
+
           We aim to make virtual learning and communication easier and more
           accessible to students across the world and from different educational
           backgrounds.
         </p>
+
         <br />
         <br />
         <p>Subscribe to our NewsLetter</p>
@@ -60,6 +65,9 @@ const Hero = () => {
         <img src={Google} alt="" />
         <img src={apple} alt="" />
       </Flex> */}
+
+      
+        
     </Container>
   );
 };

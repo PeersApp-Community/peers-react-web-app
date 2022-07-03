@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../Images/photo_2022-06-11_15-53-30_1-removebg-preview.png";
+
 import { Ulist, NavImg, Nav, Navbutton, NavLink } from "./styles/learnStyles";
 import GlobalStyle from "./styles/GlobalStyle";
 
@@ -61,3 +62,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
