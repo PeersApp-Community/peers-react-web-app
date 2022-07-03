@@ -12,22 +12,33 @@ const About = () => {
         <h3>About Us</h3>
 
         <AboutFlex smHeight="auto" fd="column">
-          <img src={Group1} alt="" />
           <Text>
-            <h4>Learn</h4>
+            <h4>
+              Learn | Network | Redefine <br />
+              <em> Your School Experience</em>
+            </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> A
-              iure pariatur placeat odio cum ut est accusamus totam.{" "}
+              The app consists of an Inbuilt library. It also helps with
+              schedule planning and it stores all data on the server so you
+              don’t have to worry about losing your information.
             </p>
             <Button bg="#0A4076" color="#fff">
               Learn More
             </Button>
+            <br />
+            <img src={Group1} alt="" />
+            <br />
+            <img src={Group6} alt="" />
+            <br />
+            <img src={Group7} alt="" />
+            <br />
+            <br />
+            <br />
           </Text>
         </AboutFlex>
 
-        <AboutFlex smHeight="auto" fd="column-reverse">
+        {/* <AboutFlex smHeight="auto" fd="column-reverse">
           <Text>
-            <h4>Network</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> A
               iure pariatur placeat odio cum ut est accusamus totam.{" "}
@@ -36,15 +47,10 @@ const About = () => {
               Learn More
             </Button>
           </Text>
-          <img src={Group7} alt="" />
         </AboutFlex>
 
         <AboutFlex smHeight="auto" fd="column">
-          <img src={Group6} alt="" />
           <Text>
-            <h4>
-              Redefine Your <br /> School Experience
-            </h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> A
               iure pariatur placeat odio cum ut est accusamus totam.{" "}
@@ -53,7 +59,7 @@ const About = () => {
               Learn More
             </Button>
           </Text>
-        </AboutFlex>
+        </AboutFlex> */}
       </Grid>
 
       <BsFillRecordCircleFill className="circle1" />

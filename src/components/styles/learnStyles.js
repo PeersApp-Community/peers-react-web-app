@@ -253,7 +253,7 @@ export const AboutFlex = styled.div`
     height: ${(props) => props.smHeight};
     img {
       width: 50%;
-      height: 70vh;
+      height: 55vh;
     }
   }
 `;
@@ -362,7 +362,7 @@ export const Article = styled.div`
   height: auto;
   width: 50%;
   margin: auto;
-  padding: 1% 0%;
+  padding: 1% 0.5%;
 
   header {
     display: flex;
@@ -387,6 +387,21 @@ export const Article = styled.div`
 
   @media (max-width: 769px) {
     width: 80%;
+
+    header {
+      h5 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 10vh;
+        font-size: 100%;
+        padding: 3px;
+      }
+    }
+
+    span {
+      font-size: 1.3rem;
+    }
   }
 `;
 //  DOWNDLOAD SECTION
