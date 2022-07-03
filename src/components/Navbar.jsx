@@ -1,84 +1,65 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../Images/photo_2022-06-11_15-53-30_1-removebg-preview.png";
-import { Button, Flex, Ulist, NavImg } from "./styles/learnStyles";
-import GlobalStyle from "../GlobalStyle";
+
+import { Ulist, NavImg, Nav, Navbutton, NavLink } from "./styles/learnStyles";
+import GlobalStyle from "./styles/GlobalStyle";
 
 const Navbar = () => {
   return (
-    <Flex
-      padding=" 2% 0%"
-      justify="space-evenly"
-      position="absolute"
-      width="100%"
-      place="center"
-    >
-      <Ulist width="30%">
-        <li>
-          <a href="/#home" className="link">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="/#about" className="link">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="/#download" className="link">
-            Download
-          </a>
-        </li>
-        <li>
-          <a href="/#testimonials" className="link">
-            Testimonials
-          </a>
-        </li>
-        <li>
-          <a href="/#contact" className="link">
-            Contact
-          </a>
-        </li>
-      </Ulist>
+    <Nav className="navbar navbar-expand-lg navbar-dark border-bottom">
+      <GlobalStyle />
+
       <NavImg>
         <img src={logo} alt=" " />
       </NavImg>
-      <Flex width="30%" justify="space-evenly" place="center">
-        <Button>
-          <Link to="" id="link">
+
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <NavLink class="collapse navbar-collapse" id="collapsibleNavbar">
+        <Ulist width="50%" className="navbar-nav">
+          <li className="nav-item">
+            <Link to="/" className="nav-link text-light link">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="about" className="nav-link text-light link">
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="testimonials" className="nav-link text-light link">
+              Testimonials
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="download" className="nav-link text-light link">
+              Download
+            </Link>
+          </li>
+        </Ulist>
+        <Navbutton>
+          <button type="button" class="btn btn-sm btn-dark px-4">
             {" "}
-            Login{" "}
-          </Link>
-        </Button>
-        <Button>
-          <Link to="" id="link">
+            Login
+          </button>
+          <button type="button" class="btn btn-sm btn-dark px-4 ">
             {" "}
-            Sign up{" "}
-          </Link>
-        </Button>
-      </Flex>
-    </Flex>
+            Sign Up
+          </button>
+        </Navbutton>
+      </NavLink>
+    </Nav>
   );
 };
 
 export default Navbar;
 
-{
-  /* 
-const Navbar = () => {
-  return (
-    <Flex padding=" 2% 0%" justify="space-evenly" position="absolute" width="100%" place="center" smMt='20px' smDirection='row-reverse'>
-        <GlobalStyle />
-        <Ulist width="30%">
-            <li><Link to="" className='link'>Home</Link></li>
-            <li><Link to="" className='link'>About</Link></li>
-            <li><Link to="" className='link'>Testimonials</Link></li>
-            <li><Link to="" className='link'>Contact</Link></li>
-        </Ulist>
-        <NavImg>
-          <img src={logo} alt=" " />
-        </NavImg>
-
-    </Flex>
-  ); */
-}

@@ -1,55 +1,73 @@
 import React from "react";
-import { Container, Flex, HeroImg, Grid } from "./styles/learnStyles";
-import Group1 from "../Images/Group 1.png";
-import Group3 from "../Images/Group 3.png";
-import Group6 from "../Images/Group 6.png";
-import Google from "../Images/Google_Play_Store_badge_EN.svg.png";
-import apple from "../Images/apple-store.png";
 
-
-
+import {
+  Container,
+  Grid,
+  // Flex,
+  // HeroImg,
+  // Button,
+  // Ulist,
+} from "./styles/learnStyles";
+import logo from "../Images/photo_2022-06-11_15-53-30_1-removebg-preview.png";
+import { Ulist, NavImg, Nav, Navbutton, NavLink } from "./styles/learnStyles";
+// import Group1 from "../Images/Group 1.png";
+// import Group3 from "../Images/Group 3.png";
+// import Group6 from "../Images/Group 6.png";
+// import Google from "../Images/Google_Play_Store_badge_EN.svg.png";
+// import apple from "../Images/apple-store.png";
+// import { Link } from "react-router-dom";
+import GlobalStyle from "./styles/GlobalStyle";
 const Hero = () => {
   return (
-    <Container id="home" height="80vh">
-      <Grid padding="33% 0% 0% 0%">
+    <Container height="100vh" display="grid">
+      <NavImg>
+        <img src={logo} alt=" " />
+      </NavImg>
+      <br />
+      <GlobalStyle />
+      <Grid width="100%">
         <h3>Peers App</h3>
-        <p>
+        <h4>Coming Soon! </h4>
+        <p style={{ padding: "5px" }}>
+
+
+
           We aim to make virtual learning and communication easier and more
           accessible to students across the world and from different educational
           backgrounds.
         </p>
-        {/* <HeroImg>
-          <img src={Group1} alt="" />
-          <img src={Group3} alt="" />
-          <img src={Group6} alt="" />
-        </HeroImg> */}
+
+        <br />
+        <br />
+        <p>Subscribe to our NewsLetter</p>
+
+        <form
+          action="https://app.getresponse.com/add_subscriber.html"
+          accept-charset="utf-8"
+          method="post"
+        >
+          <Grid width="50%" justify="space-between">
+            <input type="text" name="first_name" placeholder="First Name" />
+            <br />
+            <input type="text" name="email" placeholder="Email Address" />
+            <br />
+            <input type="hidden" name="campaign_token" value="QtlQ0" />
+            <input type="hidden" name="start_day" value="0" />
+            <button type="submit" className="btn btn-dark">
+              {" "}
+              Subscribe{" "}
+            </button>
+          </Grid>
+        </form>
       </Grid>
 
-      <Flex padding="3% 0%">
+      {/* <Flex padding="3% 0%" justify="space-between" width="30%">
         <img src={Google} alt="" />
         <img src={apple} alt="" />
-      </Flex>
+      </Flex> */}
 
-      <Container height="80vh" heightSM="100%">
-        <Grid padding="33% 0% 0% 0%">
-          <h3>Peers App</h3>
-          <p>
-            We aim to make virtual learning and communication easier <br /> and more
-            accessible to students across the world and from different
-            educational backgrounds.
-          </p>
-          {/* <HeroImg>
-            <img src={Group1} alt="" />
-            <img src={Group3} alt="" />
-            <img src={Group6} alt="" />
-          </HeroImg> */}
-        </Grid>
-
-        <Flex padding="3% 0%">
-          <img src={Google} alt="" />
-          <img src={apple} alt="" />
-        </Flex>
-      </Container>
+      
+        
     </Container>
   );
 };
