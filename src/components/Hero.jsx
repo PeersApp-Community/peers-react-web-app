@@ -1,26 +1,39 @@
 import React from "react";
 import {
   Container,
-  Flex,
-  HeroImg,
   Grid,
-  Button,
-  Ulist,
+  // Flex,
+  // HeroImg,
+  // Button,
+  // Ulist,
 } from "./styles/learnStyles";
-import Group1 from "../Images/Group 1.png";
-import Group3 from "../Images/Group 3.png";
-import Group6 from "../Images/Group 6.png";
-import Google from "../Images/Google_Play_Store_badge_EN.svg.png";
-import apple from "../Images/apple-store.png";
-import { Link } from "react-router-dom";
+import logo from "../Images/photo_2022-06-11_15-53-30_1-removebg-preview.png";
+import { Ulist, NavImg, Nav, Navbutton, NavLink } from "./styles/learnStyles";
+// import Group1 from "../Images/Group 1.png";
+// import Group3 from "../Images/Group 3.png";
+// import Group6 from "../Images/Group 6.png";
+// import Google from "../Images/Google_Play_Store_badge_EN.svg.png";
+// import apple from "../Images/apple-store.png";
+// import { Link } from "react-router-dom";
 import GlobalStyle from "./styles/GlobalStyle";
 const Hero = () => {
   return (
     <Container height="100vh" display="grid">
+      <NavImg>
+        <img src={logo} alt=" " />
+      </NavImg>
+      <br />
       <GlobalStyle />
       <Grid width="100%">
         <h3>Peers App</h3>
         <h4>Coming Soon! </h4>
+        <p style={{ padding: "5px" }}>
+          We aim to make virtual learning and communication easier and more
+          accessible to students across the world and from different educational
+          backgrounds.
+        </p>
+        <br />
+        <br />
         <p>Subscribe to our NewsLetter</p>
 
         <form
