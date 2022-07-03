@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
     
-    margin: auto;
-    max-width:100%;
+    width:100%;
     height: ${(props) => props.height};
     padding: ${(props) => props.padding};
-    display:grid;
+    display:${(props) => props.display};
+    flex-direction:${(props) => props.fd};
+    justify-content:${(props) => props.justify};
     place-items:center;
     align-content:center;
     font-family: "Poppins", "sans-serif";
@@ -18,7 +19,7 @@ export const Container = styled.div`
         margin: 10% 0%;
     }
 
-    h3, p{
+    h3,h4, p{
         color:#fff;
         text-align: center;
     }
@@ -26,15 +27,20 @@ export const Container = styled.div`
     h3{
         font-size: 3rem;
         font-weight: 500;
+       
+    }
+
+    h4{
+
     }
 
     p{
         width: 100%;
         margin: auto;
-        font-size: 0.7rem;
-        padding: 2% 0%;
+        font-size: 0.9rem;
+        padding: 1% 0% 2% 0%;
         font-weight: 300;
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     img{
@@ -43,6 +49,18 @@ export const Container = styled.div`
 
     @media (max-width: 769px) {
         height: ${props => props.heightSM};
+        h3{
+            font-size: 2rem;
+        }
+
+        h4{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        p{
+            font-size: 1rem;
+        }
     }
 `
 
@@ -54,21 +72,41 @@ export const Flex = styled.div`
     padding: ${(props) => props.padding};
     place-items: ${(props) => props.place};
     position: ${(props) => props.position};
-    z-index: 2;
+    height: ${(props) => props.height};
+    margin:auto;
+   
 
     img{
         width: 48%;
-        height: 7vh;
+        height: 10vh;
     }
 
-    @media (max-width: 769px) {
-        flex-direction: ${props => props.smDirection};
-        align-items: ${props => props.smAlign};
-        padding: ${props => props.smPadding};
-        margin-top: ${props => props.smMt};
-        justify-content: ${props => props.smJustify};
+    input{
+        width: 80%;
+        background-color: #efefef;
+        border-radius: 5px;
+        padding: 2% 5%;
+
     }
 
+
+    @media screen and (max-width: 769px) {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28vh;
+
+        img {
+            width: 100%;
+            height: 10vh;
+          }
+
+          input{
+            width: 100%;
+    
+        }
+        
+    }
+ 
 `
 
 export const Grid= styled.div`
@@ -76,68 +114,112 @@ export const Grid= styled.div`
     padding: ${(props) => props.padding};
     position: relative;
     width:  ${(props) => props.width};
+    margin: auto;
+
+    input{
+        width: 100%;
+        background-color: #efefef;
+        border-radius: 5px;
+        padding: 2% 5%;
+
+    }
 `
 
 export const Button = styled.button`
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
     background-color: ${(props) => props.bg};
     color: ${(props) => props.color};
     border-radius: 5px;
-    width: auto;
-    padding: 0.5rem 1.0rem;
+    height: 6vh;
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
     font-family: 'Poppins', 'sans-serif';
+    font-size: 0.8rem;
+
+    @media screen and (max-width: 1024px){
+       height: auto;
+
+       
+    }
+
+`
+
+// NAVBAR SECTION
+
+export const Nav = styled.nav`
+    display: flex;
+    background-color: #0A4076;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    padding: 1% 5%;
+    height: auto;
 `
 
 export const NavImg = styled.div`
-    background-color: #fff;
-    border-radius:50%;
-    padding: 0.5%;
-
+    flex: 30%;
+    
     img{
-        width: 100%;
-        height: 10vh;
+        width:70px;
+        height:70px;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 1%;
+    }
+`
+
+export const NavLink =styled.div`
+    display: flex;
+    flex: 70%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 769px){
+        display: grid;
+        justify-content: center;
+
     }
 `
 
 export const Ulist = styled.ul`
-    display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    width: ${(props) => props.width};
-    height: ${(props) => props.height};
-    flex-direction: ${(props) => props.fd};
-
-
+    display:flex;
+    justify-content: space-between;;
+    width:${(props) => props.width};
+    height:${(props) => props.height};
+    flex-direction:${(props) => props.fd};
+    text-align:center;
+    
     li{
         list-style-type: none;
-        font-family: 'Poppins', 'sans-serif';
-        font-weight:300;
-        font-size: 0.8rem;
-        text-align:center;
+        
     }
-
-    @media (max-width: 769px) {
-        gap: 10px;
+  
+    @media screen and (max-width: 1025px){
+        justify-content: space-evenly;
+        width: 100%;
     }
 `
 
-export const HeroImg = styled.div`
-    display:flex;
-    font-family: 'Poppins', 'sans-serif';
-    
-    img{
-        height: 65vh;
-        margin: 0% 5% 0% 0%;
+export const Navbutton = styled.div`
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+
+    @media screen and (max-width: 1025px){
+        width: 45%;
     }
 
-    @media (max-width: 769px) {
+    @media screen and (max-width: 769px){
         flex-direction: column;
-        gap: 30px;
-        img {
-          height: 80vh;
-        }
+        justify-content: space-between;
+        width: 100%;
+        height: 10vh;
     }
-`
+` 
+// Hero Section
+
+
+
 // ABOUT SECTION
 
 export const Section = styled.div`
@@ -152,6 +234,7 @@ export const Section = styled.div`
         padding:2% 0%;
     }
 
+
     p{
         font-size: 0.7rem;
         text-align: center;
@@ -159,6 +242,16 @@ export const Section = styled.div`
 
     @media (max-width: 769px) {
         margin-top: ${props => props.smMt};
+        h3{
+            font-size: 2rem;
+        }
+
+        p{
+            width: 90%;
+            margin: auto;
+        }
+
+       
     }
 `
 
@@ -170,13 +263,14 @@ export const AboutFlex = styled.div`
     padding: 3% 15%;
 
     @media (max-width: 769px) {
-        flex-direction: ${props => props.reverse || "column"};
+        flex-direction: ${(props) => props.fd};
         align-items: center;
-        margin-top: ${props => props.smMt};
+        margin-top: 10%;
+        padding: 0%;
+        height: ${props => props.smHeight};
         img {
-          width: 300px;
-          height: 100%;
-          margin-bottom: 20px;
+          width: 50%;
+          height: 70vh;
         }
     }
 `
@@ -204,6 +298,20 @@ export const Text = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+
+        h4{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color:#0A4076;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        p{
+            text-align: center;
+        }
+
     }
 `
 
@@ -272,28 +380,58 @@ export const TestContainer= styled.div`
  
  `
  export const Article = styled.div`
-    display: flex;
-    justify-content:left;
-    align-items: center;
     background-color:#efefef;
-    width: 30%;
-    height: 7vh;
-    margin: 1% auto;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    padding: 1% 0%;
+
+    header{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+
 
     span{
-        font-size:1.5rem;
-        margin-left: 15%;
+        font-size: 1.5rem;
     }
 
     h5{
         text-align:left;
-        margin-left: 10%;
+    }
+
+    p{
+        width: 80%;
+        margin:auto;
     }
 
     @media (max-width: 769px) {
         width: 80%;
     }
  `
+//  DOWNDLOAD SECTION
+export const DownloadImg = styled.div`
+    display: flex;
+    img{
+        width: 50%;
+        height: 10vh;
+    }
+
+    @media screen and (max-width: 769px){
+        margin-auto;
+
+        img{
+            width: 50%;
+            height: 10vh;
+        }
+
+    }
+
+`
+
 //  SUBSCRIBE Section
 export const SubFlex = styled.div`
     display: flex;
@@ -341,6 +479,7 @@ export const SubFlex = styled.div`
         }
         p {
           font-size: 0.8rem;
+          text-align: center;
         }
         button {
           margin-top: 15px;
@@ -388,6 +527,10 @@ export const FooterSection =styled.section`
         margin: auto;
         text-align: center;
         margin-bottom: 20px;
+
+        p{
+            text-align: center;
+        }
     }
 `
 

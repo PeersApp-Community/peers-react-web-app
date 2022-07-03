@@ -5,6 +5,9 @@ import Group3 from "../Images/Group 3.png";
 import Group6 from "../Images/Group 6.png";
 import Google from "../Images/Google_Play_Store_badge_EN.svg.png";
 import apple from "../Images/apple-store.png";
+
+
+
 const Hero = () => {
   return (
     <Container id="home" height="80vh">
@@ -15,11 +18,11 @@ const Hero = () => {
           accessible to students across the world and from different educational
           backgrounds.
         </p>
-        <HeroImg>
+        {/* <HeroImg>
           <img src={Group1} alt="" />
           <img src={Group3} alt="" />
           <img src={Group6} alt="" />
-        </HeroImg>
+        </HeroImg> */}
       </Grid>
 
       <Flex padding="3% 0%">
@@ -35,11 +38,11 @@ const Hero = () => {
             accessible to students across the world and from different
             educational backgrounds.
           </p>
-          <HeroImg>
+          {/* <HeroImg>
             <img src={Group1} alt="" />
             <img src={Group3} alt="" />
             <img src={Group6} alt="" />
-          </HeroImg>
+          </HeroImg> */}
         </Grid>
 
         <Flex padding="3% 0%">

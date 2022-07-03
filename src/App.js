@@ -7,13 +7,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Learning from "./components/Learning";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import About from "./components/About";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
+import Download from "./components/Download";
 
 function App() {
   return (
     <Router>
       <div>
+        <Navbar />
         <Routes>
-        <Route path='/' element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="testimonials" element={<Testimonials />} />
+          <Route path="download" element={<Download />} />
           {/* Home page */}
           {/* <Route path="/" element={<Logo />} /> */}
 
@@ -28,11 +36,8 @@ function App() {
           {/* <Route path="*" element={<Logo />} /> */}
 
           {/* <Route path="/" element={<Learning />} /> */}
-
         </Routes>
-
-   
-  
+        <Footer />
       </div>
     </Router>
   );
