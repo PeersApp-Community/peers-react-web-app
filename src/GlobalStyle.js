@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+font-family: 'Poppins', 'sans-serif';
 
 html {
   scroll-behavior: smooth;
@@ -62,75 +63,19 @@ html {
       font-size: 1rem;
     }
 
-    #link, .link, .flink {
+    #link, .link, .flink{
       text-decoration: none;
       color:#0A4076;
+      background-color: transparent;
     }
 
-    .link, .slink{
+    .link{
       color: #fff;
     }
 
     .flink{
       color:#000;
     }
-
-    .slink{
-      font-size: 1.2rem;
-    }
-
-
-    .circle1, .circle2{
-      position: absolute;
-      font-size: 30rem;
-      opacity: 0.5;
-    }
-
-    .circle1{
-      top: 55%;
-      right: 0%;
-      color: #000;
-      z-index: -1;
-
-      @media screen and (max-width: 769px){
-        display: none;
-      }
-
-
-    }
-
-    .circle2{
-      top: 180%;
-      left: -5%;
-      color: #0A4076;
-
-      
-      @media screen and (max-width: 769px){
-        display:none;
-      }
-
-    }
-
-  #collapsibleNavbar{
-      transition: 1.2s;
-    }
-
-    // USESTATE CLASSES
-    .none {
-      @media screen and (max-width: 1200px){
-        visiibilty: hidden;
-      }
-      
-    }
-
-    .show{
-      @media screen and (max-width: 1200px){
-        visiibilty: visible;
-
-      }
-    
-    }
-
   }
 `;
 

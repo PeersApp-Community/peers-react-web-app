@@ -1,12 +1,21 @@
-import React from 'react'
-import { Container, Flex, HeroImg, Grid, Button, Ulist } from './styles/learnStyles'
-import Group1 from '../Images/Group 1.png' 
-import Group3 from '../Images/Group 3.png'
-import Group6 from '../Images/Group 6.png'
-import Google from '../Images/Google_Play_Store_badge_EN.svg.png'
-import apple from '../Images/apple-store.png'
-import { Link } from 'react-router-dom';
-import GlobalStyle from './styles/GlobalStyle'
+import React from "react";
+
+import {
+  Container,
+  Grid,
+  // Flex,
+  // HeroImg,
+  // Button,
+  // Ulist,
+} from "./styles/learnStyles";
+
+// import Group1 from "../Images/Group 1.png";
+// import Group3 from "../Images/Group 3.png";
+// import Group6 from "../Images/Group 6.png";
+// import Google from "../Images/Google_Play_Store_badge_EN.svg.png";
+// import apple from "../Images/apple-store.png";
+// import { Link } from "react-router-dom";
+import GlobalStyle from "./styles/GlobalStyle";
 const Hero = () => {
   return (
     <Container height="90vh" display="grid" >
@@ -33,8 +42,10 @@ const Hero = () => {
             <img src={apple} alt='' />
         </Flex> */}
 
+      
+        
     </Container>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

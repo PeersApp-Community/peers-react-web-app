@@ -1,11 +1,13 @@
-import React from 'react'
-import { AboutFlex, DownloadImg, Flex,  Section, SubFlex, Text } from './styles/learnStyles'
-import Google from '../Images/Google_Play_Store_badge_EN.svg.png';
-import apple from '../Images/apple-store.png';
-import Group7 from '../Images/Group 7.png';
+import React from "react";
+
+import {
+  Section
+} from "./styles/learnStyles";
+// import Google from "../Images/Google_Play_Store_badge_EN.svg.png";
+// import apple from "../Images/apple-store.png";
 const Download = () => {
   return (
-    <Section mt="5%">
+    <Section >
         {/* <AboutFlex smHeight="auto" fd="column" >
             <Text smMb = " 8%">
                 <h4>Download App</h4>
@@ -25,8 +27,7 @@ const Download = () => {
             <button>Get Started</button>
         </SubFlex> */}
     </Section>
-    
-  )
-}
+  );
+};
 
-export default Download
+export default Download;

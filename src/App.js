@@ -1,17 +1,8 @@
-import Logo from "./components/Logo";
-import Login from "./components/auth/Login";
-import AuthWrapper from "./components/auth/AuthWrapper";
-import Register from "./components/auth/Register";
-import OTP from "./components/auth/OTP";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Learning from "./components/Learning";
-import Navbar from "./components/Navbar";
+
 import Home from "./components/Home";
-import About from "./components/About";
-import Testimonials from "./components/Testimonials";
-import Footer from "./components/Footer";
-import Download from "./components/Download";
-import { FAQS } from "./components/styles/learnStyles";
+
 
 function App() {
   return (

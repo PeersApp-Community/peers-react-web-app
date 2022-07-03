@@ -1,9 +1,10 @@
-import React from 'react'
-import { AboutFlex, Section, Button, Grid, Text } from './styles/learnStyles'
-import Group1 from '../Images/Group 1.png'
-import Group6 from '../Images/Group 6.png'
-import Group7 from '../Images/Group 7.png'
-import {BsFillRecordCircleFill} from "react-icons/bs";
+import React from "react";
+import { AboutFlex, Section, Grid, Text } from "./styles/learnStyles";
+import Group1 from "../Images/Group 1.png";
+import Group6 from "../Images/Group 6.png";
+
+
+
 
 const About = () => {
   return (
@@ -25,14 +26,18 @@ const About = () => {
 
         {/* <AboutFlex smHeight="auto" fd="column-reverse" >
           <Text>
-            <h4>Network</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> A iure pariatur placeat odio cum ut est accusamus totam. </p>
-            <Button bg="#0A4076" color="#fff">Learn More</Button>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> A
+              iure pariatur placeat odio cum ut est accusamus totam.{" "}
+            </p>
+            <Button bg="#0A4076" color="#fff">
+              Learn More
+            </Button>
           </Text>
           <img src={Group7} alt='' />
         </AboutFlex> */}
 
-        
         <AboutFlex smHeight="auto" fd="column">
           <div>
             <img src={Group6} alt='' />
@@ -49,7 +54,7 @@ It also helps with schedule planning and it stores all data on the server so you
       {/* <BsFillRecordCircleFill className='circle1' /> */}
       {/* <BsFillRecordCircleFill className='circle2' /> */}
     </Section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
