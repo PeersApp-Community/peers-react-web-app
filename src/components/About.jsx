@@ -3,7 +3,7 @@ import { AboutFlex, Section, Button, Grid, Text } from "./styles/learnStyles";
 import Group1 from "../Images/Group 1.png";
 import Group6 from "../Images/Group 6.png";
 
-import Group7 from "../Images/Group 7.png";
+// import Group7 from "../Images/Group 7.png";
 import { BsFillRecordCircleFill } from "react-icons/bs";
 
 
@@ -23,8 +23,9 @@ const About = () => {
           <Text>
             <h4>
               Learn | Network | Redefine <br />
-              <em> Your School Experience</em>
-
+              <p style={{ fontSize: "25px" }}>
+                Your School Experience
+              </p>
             </h4>
             <p>
               The app consists of an Inbuilt library. It also helps with
@@ -41,7 +42,7 @@ const About = () => {
             <div className="imgDiv">
               <img src={Group1} alt="" />
               <img src={Group6} alt="" />
-              <img src={Group7} alt="" />
+              {/* <img src={Group7} alt="" /> */}
             </div>
             <br />
             <br />
@@ -82,7 +83,6 @@ const About = () => {
 
       <BsFillRecordCircleFill className="circle1" />
       <BsFillRecordCircleFill className="circle2" />
-
     </Section>
   );
 };

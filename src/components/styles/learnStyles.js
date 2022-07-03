@@ -68,13 +68,15 @@ export const Flex = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
   display: flex;
   justify-content: ${(props) => props.justify};
+  align-items: ${(props) => props.align};
+  flex-direction: ${(props) => props.fdirection};
   width: ${(props) => props.width};
   padding: ${(props) => props.padding};
   place-items: ${(props) => props.place};
   position: ${(props) => props.position};
   height: ${(props) => props.height};
+  gap: ${(props) => props.gap};
   margin: auto;
-
   img {
     width: 48%;
     height: 10vh;
@@ -87,10 +89,12 @@ export const Flex = styled.div`
     padding: 2% 5%;
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 1169px) {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     height: 28vh;
+    gap: 10px;
 
     img {
       width: 100%;
@@ -124,13 +128,15 @@ export const Button = styled.button`
   color: ${(props) => props.color};
   border-radius: 5px;
   height: 6vh;
-  padding: 0.5rem 1.5rem;
+  width: ${(props) => props.width};
+  padding: 0.5rem ${(props) => props.ps || "1.5rem"};
   text-decoration: none;
   font-family: "Poppins", "sans-serif";
   font-size: 0.8rem;
 
   @media screen and (max-width: 1124px) {
     height: auto;
+    width: 100%;
   }
 `;
 
@@ -456,6 +462,7 @@ export const DownloadImg = styled.div`
 export const SubFlex = styled.div`
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
   align-items: center;
   border-radius: 8px;
   background-color: #0a4076;
@@ -464,6 +471,7 @@ export const SubFlex = styled.div`
   width: 80%;
   margin: 3% auto;
   height: 30vh;
+  padding: 15px;
 
   h5 {
     font-size: 2rem;

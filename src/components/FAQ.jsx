@@ -32,8 +32,7 @@ const FAQ = () => {
                 creating a link between social networking and creating
                 educational opportunities. With PeersApp, you can communicate
                 with course mates, carry out group projects, store and access
-                learning materials, view the status of other students, have
-                access to empowerment opportunities and lots more.
+                learning materials, view the status of other students.
               </p>
             )}
           </Article>
@@ -98,7 +97,7 @@ const FAQ = () => {
           </Article>
           <br />
           <br />
-          <Article>
+          {/* <Article>
             <header>
               <h5 onClick={() => setToggle4(!toggle4)}>
                 <span>
@@ -115,7 +114,7 @@ const FAQ = () => {
                 provided they are signed up to PeersApp.
               </p>
             )}
-          </Article>
+          </Article> */}
           <br />
           <br />
           <Article>

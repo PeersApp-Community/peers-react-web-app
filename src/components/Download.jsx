@@ -1,12 +1,13 @@
 import React from "react";
 
 import {
-  AboutFlex,
+  // AboutFlex,
+  Button,
   // DownloadImg,
-  // Flex,
+  Flex,
   Section,
   SubFlex,
-  Text,
+  // Text,
 } from "./styles/learnStyles";
 // import Google from "../Images/Google_Play_Store_badge_EN.svg.png";
 // import apple from "../Images/apple-store.png";
@@ -14,8 +15,8 @@ import Group7 from "../Images/Group 7.png";
 const Download = () => {
   return (
     <Section mt="5%">
-      <AboutFlex smHeight="auto" fd="column">
-        {/* <Text smMb=" 8%">
+      {/* <AboutFlex smHeight="auto" fd="column"> */}
+      {/* <Text smMb=" 8%">
 
           <h4>Download App</h4>
           <p>
@@ -30,10 +31,9 @@ const Download = () => {
           </DownloadImg> 
         </Text> */}
 
-        {/* <img src={Group7} alt="" /> */}
-      </AboutFlex>
+      {/* <img src={Group7} alt="" /> */}
+      {/* </AboutFlex> */}
       <SubFlex smMt="200px" smDirection="column" smPadding="20px">
-
         <div>
           <h5>Subscribe to get updated</h5>
           <p>
@@ -43,9 +43,23 @@ const Download = () => {
             obcaecati unde eaque nobis repudiandae aliquam fugiat.
           </p>
         </div>
-        <button>Get Started</button>
-      </SubFlex>
+        {/* <button>Get Started</button> */}
 
+        <Flex
+          padding="5% 0%"
+          width="100%"
+          justify="space-between"
+          smJustify="space-around"
+          fdirection="column"
+          align="end"
+          gap="15px"
+        >
+          <input type="email" placeholder="email address" />
+          <Button bg="#0A4076" color="#fff" ps="3em" width="400px">
+            Send
+          </Button>
+        </Flex>
+      </SubFlex>
     </Section>
   );
 };
