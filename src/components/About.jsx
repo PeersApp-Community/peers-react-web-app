@@ -10,7 +10,7 @@ const About = () => {
     <Section mt="0%" smMt="5%">
       <Grid>
         <h3>About Us</h3>
-
+        <br />
         <AboutFlex smHeight="auto" fd="column">
           <Text>
             <h4>
@@ -20,24 +20,27 @@ const About = () => {
             <p>
               The app consists of an Inbuilt library. It also helps with
               schedule planning and it stores all data on the server so you
-              don’t have to worry about losing your information.
+              don't have to worry about losing your information.
             </p>
             <Button bg="#0A4076" color="#fff">
               Learn More
             </Button>
             <br />
-            <img src={Group1} alt="" />
             <br />
-            <img src={Group6} alt="" />
             <br />
-            <img src={Group7} alt="" />
+            <div className="imgDiv">
+              <img src={Group1} alt="" />
+              <img src={Group6} alt="" />
+              <img src={Group7} alt="" />
+            </div>
             <br />
             <br />
             <br />
           </Text>
         </AboutFlex>
+      </Grid>
 
-        {/* <AboutFlex smHeight="auto" fd="column-reverse">
+      {/* <AboutFlex smHeight="auto" fd="column-reverse">
           <Text>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> A
@@ -60,7 +63,6 @@ const About = () => {
             </Button>
           </Text>
         </AboutFlex> */}
-      </Grid>
 
       <BsFillRecordCircleFill className="circle1" />
       <BsFillRecordCircleFill className="circle2" />

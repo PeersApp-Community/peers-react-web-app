@@ -240,10 +240,26 @@ export const Section = styled.div`
 
 export const AboutFlex = styled.div`
   display: flex;
-  height: 80vh;
+  /* height: 80vh; */
   width: 100%;
   justify-content: space-evenly;
   padding: 3% 15%;
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .imgDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    img {
+      width: 30%;
+    }
+  }
 
   @media (max-width: 769px) {
     flex-direction: ${(props) => props.fd};
@@ -251,9 +267,21 @@ export const AboutFlex = styled.div`
     margin-top: 10%;
     padding: 0%;
     height: ${(props) => props.smHeight};
-    img {
-      width: 50%;
-      height: 55vh;
+
+    .imgDiv {
+      width: 100%;
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 50%;
+        height: 55vh;
+      }
+    }
+    p {
+      font-size: 1em;
     }
   }
 `;
@@ -383,6 +411,7 @@ export const Article = styled.div`
   p {
     width: 80%;
     margin: auto;
+    transition: all 0.3s ease;
   }
 
   @media (max-width: 769px) {

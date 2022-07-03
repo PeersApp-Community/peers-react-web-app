@@ -1,15 +1,15 @@
-import React, {useState, use} from 'react'
-import { Grid, Section,FAQS, Article } from './styles/learnStyles'
-import {GrFormAdd} from "react-icons/gr"
+import React, { useState, use } from "react";
+import { Grid, Section, FAQS, Article } from "./styles/learnStyles";
+import { GrFormAdd } from "react-icons/gr";
 const FAQ = () => {
-    const [toggle, setToggle] = useState(true);
-    const [toggle1, setToggle1] = useState(true);
-    const [toggle2, setToggle2] = useState(true);
-    const [toggle3, setToggle3] = useState(true);
-    const [toggle4, setToggle4] = useState(true);
-    const [toggle5, setToggle5] = useState(true);
-    const [toggle6, setToggle6] = useState(true);
-    const [toggle7, setToggle7] = useState(true);
+  const [toggle, setToggle] = useState(true);
+  const [toggle1, setToggle1] = useState(true);
+  const [toggle2, setToggle2] = useState(true);
+  const [toggle3, setToggle3] = useState(true);
+  const [toggle4, setToggle4] = useState(true);
+  const [toggle5, setToggle5] = useState(true);
+  const [toggle6, setToggle6] = useState(true);
+  const [toggle7, setToggle7] = useState(true);
   return (
     <Section>
       <Grid>
@@ -17,9 +17,9 @@ const FAQ = () => {
         <FAQS>
           <Article>
             <header>
-              <h5>
+              <h5 onClick={() => setToggle(!toggle)}>
                 <span>
-                  <GrFormAdd onMouseOver={() => setToggle(!toggle)} />
+                  <GrFormAdd />
                 </span>{" "}
                 What is PeersApp?
               </h5>
@@ -40,9 +40,9 @@ const FAQ = () => {
           <br />
           <Article>
             <header>
-              <h5>
+              <h5 onClick={() => setToggle1(!toggle1)}>
                 <span>
-                  <GrFormAdd onMouseOver={() => setToggle1(!toggle1)} />
+                  <GrFormAdd />
                 </span>{" "}
                 Who is PeersApp for?
               </h5>
@@ -59,9 +59,9 @@ const FAQ = () => {
           <br />
           <Article>
             <header>
-              <h5>
+              <h5 onClick={() => setToggle2(!toggle2)}>
                 <span>
-                  <GrFormAdd onMouseOver={() => setToggle2(!toggle2)} />
+                  <GrFormAdd />
                 </span>{" "}
                 Where can I get PeersApp?
               </h5>
@@ -78,9 +78,9 @@ const FAQ = () => {
           <br />
           <Article>
             <header>
-              <h5>
+              <h5 onClick={() => setToggle3(!toggle3)}>
                 <span>
-                  <GrFormAdd onMouseOver={() => setToggle3(!toggle3)} />
+                  <GrFormAdd />
                 </span>{" "}
                 How do I sign up on PeersApp?
               </h5>
@@ -99,9 +99,9 @@ const FAQ = () => {
           <br />
           <Article>
             <header>
-              <h5>
+              <h5 onClick={() => setToggle4(!toggle4)}>
                 <span>
-                  <GrFormAdd onMouseOver={() => setToggle4(!toggle4)} />
+                  <GrFormAdd />{" "}
                 </span>{" "}
                 How do I contact people?
               </h5>
@@ -119,9 +119,9 @@ const FAQ = () => {
           <br />
           <Article>
             <header>
-              <h5>
+              <h5 onClick={() => setToggle5(!toggle5)}>
                 <span>
-                  <GrFormAdd onMouseOver={() => setToggle5(!toggle5)} />
+                  <GrFormAdd />{" "}
                 </span>{" "}
                 Who can see my personal information ?
               </h5>
@@ -142,9 +142,9 @@ const FAQ = () => {
           <br />
           <Article>
             <header>
-              <h5>
+              <h5 onClick={() => setToggle6(!toggle6)}>
                 <span>
-                  <GrFormAdd onMouseOver={() => setToggle6(!toggle6)} />
+                  <GrFormAdd />{" "}
                 </span>{" "}
                 How do I know my personal information is safe?
               </h5>
@@ -163,9 +163,9 @@ const FAQ = () => {
           <br />
           <Article>
             <header>
-              <h5>
+              <h5 onClick={() => setToggle7(!toggle7)}>
                 <span>
-                  <GrFormAdd onMouseOver={() => setToggle7(!toggle7)} />
+                  <GrFormAdd />{" "}
                 </span>{" "}
                 Is there anyone to talk to incase of questions or complaints?
               </h5>
@@ -183,6 +183,6 @@ const FAQ = () => {
       </Grid>
     </Section>
   );
-}
+};
 
-export default FAQ
+export default FAQ;
