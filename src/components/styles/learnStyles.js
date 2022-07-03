@@ -483,6 +483,7 @@ export const FooterFlex = styled.div`
   height: 40vh;
   margin-top: 5%;
   padding: 0% 3%;
+  background: #efefef;
 
   @media (max-width: 769px) {
     flex-direction: column;
