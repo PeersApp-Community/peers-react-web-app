@@ -7,7 +7,7 @@ import image4 from '../Images/pexels-engin-akyurt-1441151.jpg'
 const Testimonials = () => {
   return (
     <Section smMt='10%'>
-        <Grid width="100%">
+        {/* <Grid width="100%">
             <h3>Testimonials</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deleniti ipsum voluptate ipsam. Libero corrupti quasi <br /> eius dolorem a odit laborum corporis</p>
             <TestFlex>
@@ -55,7 +55,7 @@ const Testimonials = () => {
             </TestFlex>
         
         </Grid>
-        
+         */}
 
 
     </Section>

@@ -11,7 +11,7 @@ const FAQ = () => {
     const [toggle6, setToggle6] = useState(true);
     const [toggle7, setToggle7] = useState(true);
   return (
-    <Section> 
+    <Section id='faqs'> 
         <Grid>
             <h3>FAQ's</h3>
             <FAQS >

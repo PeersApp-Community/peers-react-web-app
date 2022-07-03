@@ -3,28 +3,27 @@ import { Button, Copyright, Flex, FooterFlex, FooterSection, Section, Ulist } fr
 import {Link} from 'react-router-dom';
 const Footer = () => {
   return (
-    <Section>
-        <FooterFlex>
+    <Section id="footer">
+        <FooterFlex >
         <FooterSection width="30%" >
             <h4>Peers App</h4> 
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Maxime obcaecati amet labore excepturi quo.</p>
+            <p> Learn, Network, Redefine your school experience</p>
         </FooterSection>
         <FooterSection>
             <h4>Quick Links</h4>
-            <Ulist fd="column" height='50%' smDirection='column'>
-                <li><Link to="" className='flink'>Home</Link></li>
-                <li><Link to="" className='flink'>About</Link></li>
-                <li><Link to="" className='flink'>Testimonials</Link></li>
-                <li><Link to="" className='flink'>Contact</Link></li>
-            </Ulist>
+             <Ulist  className='navbar-nav'>
+              <li className='nav-item'><a href="/" className='nav-link text-dark link' target="_top">Home</a></li>
+              <li className='nav-item'><a href= "#about" className='nav-link text-dark link'  target="_top">About</a></li>
+              <li className='nav-item'><a href="#faqs" className='nav-link text-dark link'  target="_top">FAQs</a></li>
+              <li className='nav-item'><a href="#footer" className='nav-link text-dark link' target="_top" >Contact</a></li>
+          </Ulist>
         </FooterSection>
         <FooterSection>
             <h4>Follow Us</h4>
-            <Ulist fd="column" height='50%' smDirection='column'>
-                <li><Link to="" className='flink'>Facebook</Link></li>
-                <li><Link to="" className='flink'>Twitter</Link></li>
-                <li><Link to="" className='flink'>Instagram</Link></li>
-                <li><Link to="" className='flink'>Telegram</Link></li>
+            <Ulist className='navbar-nav' fd="column" height='50%' smDirection='column'>
+                <li className='nav-item'><a href="https://www.facebook.com/OfficialPeersApp/" className='nav-link  flink'  target="_blank ">Facebook</a></li>
+                <li className='nav-item'><a href="https://twitter.com/_peersapp?t=6ZRVLfAyYe5-PHXvuZubRQ&s=09" className='nav-link flink' target="_blank " >Twitter</a></li>
+                <li className='nav-item'><a href="https://www.instagram.com/_peersapp/" className='nav-link flink' target="_blank ">Instagram</a></li>
             </Ulist>
         </FooterSection>
     </FooterFlex>

@@ -116,12 +116,21 @@ export const Grid= styled.div`
     width:  ${(props) => props.width};
     margin: auto;
 
+    h3{
+        margin-top: 1%;
+    }
+
     input{
-        width: 100%;
         background-color: #efefef;
         border-radius: 5px;
-        padding: 2% 5%;
+        padding: 3% 5%;
+    }
 
+    @media screen and (max-width: 1025px){
+        width: ${(props) => props.smWidth};
+        input {
+            margin-top: 5%;
+        }
     }
 `
 
@@ -149,10 +158,10 @@ export const Button = styled.button`
 export const Nav = styled.nav`
     display: flex;
     background-color: #0A4076;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width:100%;
-    padding: 1% 5%;
+    padding: 2% 5%;
     height: auto;
 `
 
@@ -166,12 +175,20 @@ export const NavImg = styled.div`
         background-color: #fff;
         padding: 1%;
     }
+
+    @media screen and (max-width: 1025px){
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
 `
 
 export const NavLink =styled.div`
     display: flex;
-    flex: 70%;
+    width: 100%;
     justify-content: space-between;
+
 
     @media screen and (max-width: 769px){
         display: grid;
@@ -182,11 +199,12 @@ export const NavLink =styled.div`
 
 export const Ulist = styled.ul`
     display:flex;
-    justify-content: space-between;;
+    justify-content: space-evenly;
     width:${(props) => props.width};
     height:${(props) => props.height};
     flex-direction:${(props) => props.fd};
     text-align:center;
+
     
     li{
         list-style-type: none;
@@ -226,6 +244,7 @@ export const Section = styled.div`
     margin-top: ${(props) => props.mt};
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
     font-family: 'Poppins', 'sans-serif';
+    width: 100%;
 
     h3{
         color:#222;
@@ -260,7 +279,20 @@ export const AboutFlex = styled.div`
     height: 80vh;
     width:100%;
     justify-content:space-evenly;
-    padding: 3% 15%;
+    padding: 0% 15%;
+    margin: 0% 5% 7% 5%;
+
+    div{
+        flex: 50%;
+        margin: auto;
+        img{
+            width:60%;
+            height: 80vh;
+        }
+    }
+
+       
+    
 
     @media (max-width: 769px) {
         flex-direction: ${(props) => props.fd};
@@ -268,15 +300,19 @@ export const AboutFlex = styled.div`
         margin-top: 10%;
         padding: 0%;
         height: ${props => props.smHeight};
-        img {
-          width: 50%;
-          height: 70vh;
+        
+        div{
+            img{
+                width:100%;
+                height: 80vh;
+            }
         }
     }
 `
 
 export const Text = styled.div`
     align-self: center;
+    flex: 50%;
 
     h4, p{
         text-align:left;
@@ -290,7 +326,9 @@ export const Text = styled.div`
 
     p{
         padding: 3% 0%;
-        text-align:left;
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.9;
     }
 
     @media (max-width: 769px) {
@@ -310,6 +348,9 @@ export const Text = styled.div`
 
         p{
             text-align: center;
+            line-height: 1.5;
+            width: 80%;
+            margin: auto;
         }
 
     }
@@ -382,16 +423,16 @@ export const TestContainer= styled.div`
  export const Article = styled.div`
     background-color:#efefef;
     height: auto;
-    width: 50%;
+    width: 60%;
     margin: auto;
-    padding: 1% 0%;
+    padding: 2% 0%;
 
     header{
         display: flex;
         justify-content:center;
         align-items: center;
         width: 100%;
-        height: 10vh;
+        height: auto;
     }
 
 
@@ -400,7 +441,7 @@ export const TestContainer= styled.div`
     }
 
     h5{
-        text-align:left;
+        text-align: center;
     }
 
     p{
@@ -410,6 +451,11 @@ export const TestContainer= styled.div`
 
     @media (max-width: 769px) {
         width: 80%;
+        padding: 5% 2%;
+
+        h5{
+            font-size: 0.9rem;
+        }
     }
  `
 //  DOWNDLOAD SECTION
@@ -536,7 +582,7 @@ export const FooterSection =styled.section`
 
 export const Copyright = styled.div`
     background-color:#0A4076;
-    height: 5vh; 
+    height: 8vh; 
     display: grid;
     place-items: center;
     color: #fff;

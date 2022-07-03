@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-font-family: 'Poppins', 'sans-serif';
+
 
 
   :root {
@@ -85,7 +84,7 @@ font-family: 'Poppins', 'sans-serif';
     }
 
     .circle1{
-      top: 75%;
+      top: 55%;
       right: 0%;
       color: #000;
       z-index: -1;
@@ -107,6 +106,10 @@ font-family: 'Poppins', 'sans-serif';
         display:none;
       }
 
+    }
+
+  #collapsibleNavbar{
+      transition: 1.2s;
     }
 
     // USESTATE CLASSES

@@ -11,17 +11,17 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Download from "./components/Download";
+import { FAQS } from "./components/styles/learnStyles";
 
 function App() {
   return (
     <Router>
       <div>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="testimonials" element={<Testimonials />} />
-          <Route path="download" element={<Download />} />
+          {/* <Route path="about" element={<About />} />
+          <Route path="faqs" element={<FAQS />} /> */}
+          
           {/* Home page */}
           {/* <Route path="/" element={<Logo />} /> */}
 
@@ -37,7 +37,6 @@ function App() {
 
           {/* <Route path="/" element={<Learning />} /> */}
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
