@@ -63,19 +63,71 @@ html {
       font-size: 1rem;
     }
 
-    #link, .link, .flink{
+    #link, .link, .flink {
       text-decoration: none;
       color:#0A4076;
-      background-color: transparent;
     }
 
-    .link{
+    .link, .slink{
       color: #fff;
     }
 
     .flink{
       color:#000;
     }
+
+    .slink{
+      font-size: 1.2rem;
+    }
+
+
+    .circle1, .circle2{
+      position: absolute;
+      font-size: 30rem;
+      opacity: 0.5;
+    }
+
+    .circle1{
+      top: 75%;
+      right: 0%;
+      color: #000;
+      z-index: -1;
+
+      @media screen and (max-width: 769px){
+        display: none;
+      }
+
+
+    }
+
+    .circle2{
+      top: 180%;
+      left: -5%;
+      color: #0A4076;
+
+      
+      @media screen and (max-width: 769px){
+        display:none;
+      }
+
+    }
+
+    // USESTATE CLASSES
+    .none {
+      @media screen and (max-width: 1200px){
+        visiibilty: hidden;
+      }
+      
+    }
+
+    .show{
+      @media screen and (max-width: 1200px){
+        visiibilty: visible;
+
+      }
+    
+    }
+
   }
 `;
 

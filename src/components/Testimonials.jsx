@@ -10,9 +10,10 @@ import image1 from "../Images/pexels-andrew-personal-training-697509.jpg";
 import image2 from "../Images/pexels-ezekixl-akinnewu-1006202.jpg";
 import image3 from "../Images/pexels-jimmy-jimmy-1484794.jpg";
 import image4 from "../Images/pexels-engin-akyurt-1441151.jpg";
+
 const Testimonials = () => {
   return (
-    <Section id="testimonials">
+    <Section smMt="10%">
       <Grid width="100%">
         <h3>Testimonials</h3>
         <p>
