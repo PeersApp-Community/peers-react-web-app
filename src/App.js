@@ -37,7 +37,7 @@ function App() {
 
           {/* <Route path="/" element={<Learning />} /> */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

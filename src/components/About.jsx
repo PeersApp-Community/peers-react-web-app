@@ -9,10 +9,10 @@ import { BsFillRecordCircleFill } from "react-icons/bs";
 
 const About = () => {
   return (
-    <Section id="about" mt="26%">
+    <Section id="about" mt="5%">
       <Grid>
         <h3>About Us</h3>
-        <br />
+        {/* <br /> */}
         {/* <AboutFlex>
           <img src={Group1} alt="" /> 
         <AboutFlex smMt="100px">
