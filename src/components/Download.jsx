@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   AboutFlex,
   // DownloadImg,
@@ -15,12 +16,14 @@ const Download = () => {
     <Section mt="5%">
       <AboutFlex smHeight="auto" fd="column">
         {/* <Text smMb=" 8%">
+
           <h4>Download App</h4>
           <p>
             {" "}
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam,
             ipsum.
           </p>
+
           <DownloadImg>
             <img src={Google} alt="" />
             <img src={apple} alt="" />
@@ -30,6 +33,7 @@ const Download = () => {
         {/* <img src={Group7} alt="" /> */}
       </AboutFlex>
       <SubFlex smMt="200px" smDirection="column" smPadding="20px">
+
         <div>
           <h5>Subscribe to get updated</h5>
           <p>
@@ -41,6 +45,7 @@ const Download = () => {
         </div>
         <button>Get Started</button>
       </SubFlex>
+
     </Section>
   );
 };

@@ -1,21 +1,14 @@
-import React, {useState, use} from 'react'
-import { Grid, Section,FAQS, Article } from './styles/learnStyles'
-import {GrFormAdd} from "react-icons/gr"
+import React from "react";
+import { Grid, Section, FAQS, Article } from "./styles/learnStyles";
+import { GrFormAdd } from "react-icons/gr";
 const FAQ = () => {
-    const [toggle, setToggle] = useState(true);
-    const [toggle1, setToggle1] = useState(true);
-    const [toggle2, setToggle2] = useState(true);
-    const [toggle3, setToggle3] = useState(true);
-    const [toggle4, setToggle4] = useState(true);
-    const [toggle5, setToggle5] = useState(true);
-    const [toggle6, setToggle6] = useState(true);
-    const [toggle7, setToggle7] = useState(true);
   return (
     <Section>
       <Grid>
         <h3>FAQ's</h3>
         <FAQS>
           <Article>
+
             <header>
               <h5>
                 <span>
@@ -178,11 +171,14 @@ const FAQ = () => {
                 chatting with a bot. You get real answers from real people.
               </p>
             )}
+
           </Article>
         </FAQS>
       </Grid>
     </Section>
   );
-}
 
-export default FAQ
+};
+
+
+export default FAQ;
