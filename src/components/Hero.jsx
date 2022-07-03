@@ -43,10 +43,10 @@ const Hero = () => {
         </form>
       </Grid>
 
-      <Flex padding="3% 0%" justify="space-between" width="30%">
+      {/* <Flex padding="3% 0%" justify="space-between" width="30%">
         <img src={Google} alt="" />
         <img src={apple} alt="" />
-      </Flex>
+      </Flex> */}
     </Container>
   );
 };
