@@ -177,7 +177,8 @@ export const NavLink = styled.div`
 
 export const Ulist = styled.ul`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 150px;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   flex-direction: ${(props) => props.fd};
@@ -188,6 +189,11 @@ export const Ulist = styled.ul`
   }
 
   @media screen and (max-width: 1125px) {
+    /* justify-content: space-evenly; */
+    width: 100%;
+  }
+  @media screen and (max-width: 700px) {
+    gap: 50px;
     justify-content: space-evenly;
     width: 100%;
   }

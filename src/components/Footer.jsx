@@ -89,7 +89,7 @@ const Footer = () => {
                 Instagram
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href=""
                 className="flink"
@@ -98,7 +98,7 @@ const Footer = () => {
               >
                 Telegram
               </a>
-            </li>
+            </li> */}
           </Ulist>
         </FooterSection>
       </FooterFlex>
