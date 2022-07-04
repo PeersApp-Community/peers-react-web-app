@@ -60,47 +60,50 @@ const Footer = () => {
           <h4>Follow Us</h4>
           <Ulist fd="column" height="50%" smDirection="column">
             <li>
-              <Link
-                to={{ pathname: "https://www.facebook.com/OfficialPeersApp/" }}
+              <a
+                href="https://www.facebook.com/OfficialPeersApp/"
                 className="flink"
                 target="_blank"
+                rel="noreferrer"
               >
                 Facebook
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to={{
-                  pathname:
-                    "https://twitter.com/_peersapp?t=6ZRVLfAyYe5-PHXvuZubRQ&s=09",
-                }}
+              <a
+                href="https://twitter.com/_peersapp?t=6ZRVLfAyYe5-PHXvuZubRQ&s=09"
                 className="flink"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Twitter
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to={{
-                  pathname:
-                    "https://www.instagram.com/invites/contact/?i=1cx6lbwhdq2tc&utm_content=on5uq7e",
-                }}
+              <a
+                href="https://www.instagram.com/invites/contact/?i=1cx6lbwhdq2tc&utm_content=on5uq7e"
                 className="flink"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Instagram
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="" className="flink">
+              <a
+                href=""
+                className="flink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Telegram
-              </Link>
+              </a>
             </li>
           </Ulist>
         </FooterSection>
       </FooterFlex>
       <Copyright>
-        <p>Copyright @2022, all rights preserved</p>
+        <p>Copyright @2022, all rights reserved</p>
       </Copyright>
     </Section>
   );
