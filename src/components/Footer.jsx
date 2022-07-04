@@ -1,15 +1,23 @@
-import React from 'react'
-import { Button, Copyright, Flex, FooterFlex, FooterSection, Section, Ulist } from './styles/learnStyles'
-import {Link} from 'react-router-dom';
+import React from "react";
+import {
+  Button,
+  Copyright,
+  Flex,
+  FooterFlex,
+  FooterSection,
+  Section,
+  Ulist,
+} from "./styles/learnStyles";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Section>
       <FooterFlex>
         <FooterSection width="30%">
           <h4>Peers App</h4>
-          <p style={{fontSize: "17px"}}>
+          <p style={{ fontSize: "17px" }}>
             Learn | Network | Redefine <br />
-             Your School Experience
+            Your School Experience
           </p>
           <Flex
             padding="5% 0%"
@@ -52,17 +60,34 @@ const Footer = () => {
           <h4>Follow Us</h4>
           <Ulist fd="column" height="50%" smDirection="column">
             <li>
-              <Link to="" className="flink">
+              <Link
+                to={{ pathname: "https://www.facebook.com/OfficialPeersApp/" }}
+                className="flink"
+                target="_blank"
+              >
                 Facebook
               </Link>
             </li>
             <li>
-              <Link to="" className="flink">
+              <Link
+                to={{
+                  pathname:
+                    "https://twitter.com/_peersapp?t=6ZRVLfAyYe5-PHXvuZubRQ&s=09",
+                }}
+                className="flink"
+                target="_blank"
+              >
                 Twitter
               </Link>
             </li>
             <li>
-              <Link to="" className="flink">
+              <Link
+                to={{
+                  pathname:
+                    "https://www.instagram.com/invites/contact/?i=1cx6lbwhdq2tc&utm_content=on5uq7e",
+                }}
+                className="flink"
+              >
                 Instagram
               </Link>
             </li>
@@ -79,6 +104,6 @@ const Footer = () => {
       </Copyright>
     </Section>
   );
-}
+};
 
-export default Footer
+export default Footer;
