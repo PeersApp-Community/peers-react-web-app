@@ -32,7 +32,7 @@ const Download = () => {
 
         {/* <img src={Group7} alt="" /> */}
       </AboutFlex>
-      <SubFlex smMt="200px" smDirection="column" smPadding="20px">
+      {/* <SubFlex smMt="200px" smDirection="column" smPadding="20px">
 
         <div>
           <h5>Subscribe to get updated</h5>
@@ -44,7 +44,7 @@ const Download = () => {
           </p>
         </div>
         <button>Get Started</button>
-      </SubFlex>
+      </SubFlex> */}
 
     </Section>
   );

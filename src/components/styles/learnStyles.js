@@ -14,6 +14,7 @@ export const Container = styled.div`
   font-family: "Poppins", "sans-serif";
   background-color: #0a4076;
   position: relative;
+  margin-top:5%;
 
   h1 {
     margin: 10% 0%;
@@ -31,8 +32,6 @@ export const Container = styled.div`
     font-weight: 500;
   }
 
-  h4 {
-  }
 
   p {
     width: 100%;
@@ -48,7 +47,8 @@ export const Container = styled.div`
   }
 
   @media (max-width: 769px) {
-    height: ${(props) => props.heightSM};
+    margin-top:15%;
+    height: 100vh;
     h3 {
       font-size: 2rem;
     }
@@ -73,18 +73,26 @@ export const Flex = styled.div`
   place-items: ${(props) => props.place};
   position: ${(props) => props.position};
   height: ${(props) => props.height};
-  margin: auto;
+
 
   img {
     width: 48%;
     height: 10vh;
   }
 
-  input {
-    width: 80%;
-    background-color: #efefef;
+  // input {
+  //   width: 80%;
+  //   background-color: #efefef;
+  //   border-radius: 5px;
+  //   padding: 2% 5%;
+  // }
+
+  button{
+    background-color: #0A4076;
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
-    padding: 2% 5%;
+    color: #fff;
+    margin-left: 3%;
   }
 
   @media screen and (max-width: 769px) {
@@ -116,6 +124,10 @@ export const Grid = styled.div`
     border-radius: 5px;
     padding: 2% 5%;
   }
+
+  @media screen and (max-width: 769px){
+    width: 80%;
+  }
 `;
 
 export const Button = styled.button`
@@ -137,35 +149,44 @@ export const Button = styled.button`
 // NAVBAR SECTION
 
 export const Nav = styled.nav`
-  display: flex;
+  // display: flex;
   background-color: #0a4076;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  padding: 1% 5%;
-  height: auto;
+  position: fixed;
+  z-index: 1;
+  top:0%;
+  // justify-content: space-evenly;
+  // align-items: center;
+  // width: 100%;
+  // height: auto;
+  // 
 `;
 
 export const NavImg = styled.div`
   flex: 30%;
 
   img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #fff;
-    padding: 1%;
   }
+
+
 `;
 
 export const NavLink = styled.div`
-  display: flex;
-  flex: 70%;
-  justify-content: space-between;
+  ul{
+    width: 70%
+  }
 
+  li{
+    font-weight: 500;
+  }
   @media screen and (max-width: 769px) {
-    display: grid;
-    justify-content: center;
+    text-align: center;
+    ul{
+      width:100%;
+    }
   }
 `;
 
@@ -176,9 +197,12 @@ export const Ulist = styled.ul`
   height: ${(props) => props.height};
   flex-direction: ${(props) => props.fd};
   text-align: center;
+  padding: ${(props) => props.padding};
 
   li {
     list-style-type: none;
+    font-size: 1.1rem;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 1125px) {
@@ -226,7 +250,7 @@ export const Section = styled.div`
   }
 
   @media (max-width: 769px) {
-    margin-top: ${(props) => props.smMt};
+    margin-top: 25%;
     h3 {
       font-size: 2rem;
     }
@@ -264,7 +288,6 @@ export const AboutFlex = styled.div`
   @media (max-width: 769px) {
     flex-direction: ${(props) => props.fd};
     align-items: center;
-    margin-top: 10%;
     padding: 0%;
     height: ${(props) => props.smHeight};
 
@@ -405,7 +428,7 @@ export const Article = styled.div`
   }
 
   h5 {
-    text-align: left;
+    text-align: center;
   }
 
   p {
@@ -416,6 +439,7 @@ export const Article = styled.div`
 
   @media (max-width: 769px) {
     width: 80%;
+    padding: 5% 1%;
 
     header {
       h5 {
@@ -424,7 +448,7 @@ export const Article = styled.div`
         align-items: center;
         width: 100%;
         height: 10vh;
-        font-size: 100%;
+        font-size: 90%;
         padding: 3px;
       }
     }
@@ -509,10 +533,10 @@ export const SubFlex = styled.div`
 export const FooterFlex = styled.div`
   display: flex;
   justify-content: space-evenly;
-  height: 40vh;
+  align-items: start;
+  height: 50vh;
   margin-top: 5%;
-  padding: 0% 3%;
-  padding-top: 5px;
+  padding: 3% 3%;
   background: #efefef;
 
   @media (max-width: 769px) {
@@ -525,7 +549,7 @@ export const FooterFlex = styled.div`
 export const FooterSection = styled.section`
   width: ${(props) => props.width};
   background-color: ${(props) => props.bg};
-
+  height: 70%;
   input {
     background-color: #efefef;
     padding: 3% 3%;
@@ -540,7 +564,7 @@ export const FooterSection = styled.section`
   p {
     text-align: left;
     padding: 5% 0%;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
 
   @media (max-width: 769px) {
@@ -551,6 +575,10 @@ export const FooterSection = styled.section`
 
     p {
       text-align: center;
+    }
+
+    input {
+      width: 100%;
     }
   }
 `;

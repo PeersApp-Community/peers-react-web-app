@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-font-family: 'Poppins', 'sans-serif';
+
 
 html {
   scroll-behavior: smooth;
@@ -34,22 +33,23 @@ html {
 
   * {
   padding: 0;
-  border: 0;
   margin: 0;
   box-sizing: border-box;
   }
 
+
+
   body {
-    margin: 0;
-    padding: 0;
     color: #222222;
+    scroll-behavior: initial;
+
     ;
 
-    .head{
-      font-size: 2rem;
-      padding: 20px;
-      color: var(--bg-light)
-    }
+    // .head{
+    //   font-size: 2rem;
+    //   padding: 20px;
+    //   color: var(--bg-light)
+    // }
     
     h1 {
       font-size: 1.5rem;

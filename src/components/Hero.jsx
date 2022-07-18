@@ -29,15 +29,11 @@ const Hero = () => {
         <h3>Peers App</h3>
         <h4>Coming Soon! </h4>
         <p style={{ padding: "5px" }}>
-
-
-
           We aim to make virtual learning and communication easier and more
           accessible to students across the world and from different educational
           backgrounds.
         </p>
 
-        <br />
         <br />
         <p>Subscribe to our NewsLetter</p>
 
@@ -46,7 +42,7 @@ const Hero = () => {
           accept-charset="utf-8"
           method="post"
         >
-          <Grid width="50%" justify="space-between">
+          <Grid width="50%" justify="space-between" id="about">
             <input type="text" name="first_name" placeholder="First Name" />
             <br />
             <input type="text" name="email" placeholder="Email Address" />

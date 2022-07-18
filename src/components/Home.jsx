@@ -10,9 +10,9 @@ import Footer from './Footer'
 const Home = () => {
   return (
     <div>
-       {/* <Navbar /> */}
+       <Navbar />
        <Hero />
-       <About />
+       <About id="about"/>
        {/* <Testimonials /> */}
        <FAQ />
        <Download />

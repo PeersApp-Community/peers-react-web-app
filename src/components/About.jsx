@@ -9,7 +9,7 @@ import { BsFillRecordCircleFill } from "react-icons/bs";
 
 const About = () => {
   return (
-    <Section id="about" mt="5%">
+    <Section mt="5%">
       <Grid>
         <h3>About Us</h3>
         {/* <br /> */}
@@ -19,7 +19,8 @@ const About = () => {
           <img src={Group1} alt="" />
  */}
 
-        <AboutFlex smHeight="auto" fd="column">
+        <AboutFlex  smHeight="auto" fd="column">
+          
           <Text>
             <h4>
               Learn | Network | Redefine <br />
@@ -31,9 +32,9 @@ const About = () => {
               schedule planning and it stores all data on the server so you
               don't have to worry about losing your information.
             </p>
-            <Button bg="#0A4076" color="#fff">
+            {/* <Button bg="#0A4076" color="#fff">
               Learn More
-            </Button>
+            </Button> */}
 
             <br />
             <br />
@@ -47,7 +48,10 @@ const About = () => {
             <br />
             <br />
           </Text>
+         
         </AboutFlex>
+        <Grid id="faq"></Grid>
+        
       </Grid>
 
       {/* <AboutFlex smHeight="auto" fd="column-reverse">
@@ -79,11 +83,13 @@ const About = () => {
           </Text>
 
         </AboutFlex> */}
+    
 
       <BsFillRecordCircleFill className="circle1" />
       <BsFillRecordCircleFill className="circle2" />
+    
 
-    </Section>
+    </Section >
   );
 };
 

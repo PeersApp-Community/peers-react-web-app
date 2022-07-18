@@ -11,6 +11,7 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Download from "./components/Download";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="testimonials" element={<Testimonials />} />
+          <Route path="faq" element={<FAQ/>} />
           <Route path="download" element={<Download />} />
           {/* Home page */}
           {/* <Route path="/" element={<Logo />} /> */}

@@ -3,32 +3,34 @@ import { Button, Copyright, Flex, FooterFlex, FooterSection, Section, Ulist } fr
 import {Link} from 'react-router-dom';
 const Footer = () => {
   return (
-    <Section>
+    <Section id='contact'>
         <FooterFlex>
         <FooterSection width="30%" >
             <h4>Peers App</h4> 
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Maxime obcaecati amet labore excepturi quo.</p>
-            <Flex padding="5% 0%" width="100%" justify='space-between' smJustify='space-around'>
+            <p> 
+                Learn | Network | Redefine
+            <br/>Your School Experience
+            </p>
+            <Flex padding="5% 0%" width="100%" justify='space-between' >
                 <input type="email" placeholder='email address' />
-                <Button bg="#0A4076" color="#fff">Register</Button>
+                <button>Register</button>
             </Flex>
         </FooterSection>
         <FooterSection>
             <h4>Quick Links</h4>
-            <Ulist fd="column" height='50%' smDirection='column'>
-                <li><Link to="" className='flink'>Home</Link></li>
-                <li><Link to="" className='flink'>About</Link></li>
-                <li><Link to="" className='flink'>Testimonials</Link></li>
-                <li><Link to="" className='flink'>Contact</Link></li>
+            <Ulist fd="column" height='100%' smDirection='column' padding="5% 0% 0% 0%">
+                <li><a href="/" className='flink'>Home</a></li>
+                <li><a href="#about" className='flink'>About</a></li>
+                <li><a href="#faq" className='flink'>FAQ</a></li>
+                <li><a href="#contact" className='flink'>Contact</a></li>
             </Ulist>
         </FooterSection>
         <FooterSection>
             <h4>Follow Us</h4>
-            <Ulist fd="column" height='50%' smDirection='column'>
-                <li><Link to="" className='flink'>Facebook</Link></li>
-                <li><Link to="" className='flink'>Twitter</Link></li>
-                <li><Link to="" className='flink'>Instagram</Link></li>
-                <li><Link to="" className='flink'>Telegram</Link></li>
+            <Ulist fd="column" height='100%' smDirection='column' padding="5% 0% 0% 0%">
+                <li><a href="https://web.facebook.com/OfficialPeersApp/" className='flink' target='_blank '>Facebook</a></li>
+                <li><a href="https://twitter.com/_peersapp" className='flink' target='_blank '>Twitter</a></li>
+                <li><a href="https://www.instagram.com/_peersapp/" className='flink' target='_blank '>Instagram</a></li>
             </Ulist>
         </FooterSection>
     </FooterFlex>
