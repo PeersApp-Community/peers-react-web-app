@@ -89,8 +89,8 @@ const FAQ = () => {
 
             {!toggle3 && (
               <p>
-                You can sign up with your email address and a password chosen by
-                you. A confirmation code will be sent to your mail, you input
+                You sign up with your email address, phone number and a password chosen by
+                you. An OTP will be sent to your number, you input
                 that and it's done! You can finish setting up your profile
                 afterwards or when convenient.
               </p>
