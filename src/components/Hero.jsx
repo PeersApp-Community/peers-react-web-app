@@ -9,7 +9,8 @@ import {
   // Ulist,
 } from "./styles/learnStyles";
 import logo from "../Images/photo_2022-06-11_15-53-30_1-removebg-preview.png";
-import { Ulist, NavImg, Nav, Navbutton, NavLink } from "./styles/learnStyles";
+import { NavImg } from "./styles/learnStyles";
+// import { Ulist,  Nav, Navbutton, NavLink } from "./styles/learnStyles";
 // import Group1 from "../Images/Group 1.png";
 // import Group3 from "../Images/Group 3.png";
 // import Group6 from "../Images/Group 6.png";
@@ -61,9 +62,6 @@ const Hero = () => {
         <img src={Google} alt="" />
         <img src={apple} alt="" />
       </Flex> */}
-
-      
-        
     </Container>
   );
 };

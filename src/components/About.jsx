@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutFlex, Section, Button, Grid, Text } from "./styles/learnStyles";
+import { AboutFlex, Section,  Grid, Text } from "./styles/learnStyles";
 import Group1 from "../Images/Group 1.png";
 import Group6 from "../Images/Group 6.png";
 

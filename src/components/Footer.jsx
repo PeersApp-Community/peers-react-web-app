@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button, Copyright, Flex, FooterFlex, FooterSection, Section, Ulist } from './styles/learnStyles'
-import {Link} from 'react-router-dom';
+import {Copyright, Flex, FooterFlex, FooterSection, Section, Ulist } from './styles/learnStyles'
+// import {Link} from 'react-router-dom';
 const Footer = () => {
   return (
     <Section id='contact'>

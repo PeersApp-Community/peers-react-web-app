@@ -14,7 +14,7 @@ export const Container = styled.div`
   font-family: "Poppins", "sans-serif";
   background-color: #0a4076;
   position: relative;
-  margin-top:5%;
+  margin-top: 5%;
 
   h1 {
     margin: 10% 0%;
@@ -32,7 +32,6 @@ export const Container = styled.div`
     font-weight: 500;
   }
 
-
   p {
     width: 100%;
     margin: auto;
@@ -47,7 +46,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 769px) {
-    margin-top:15%;
+    margin-top: 15%;
     height: 100vh;
     h3 {
       font-size: 2rem;
@@ -74,7 +73,6 @@ export const Flex = styled.div`
   position: ${(props) => props.position};
   height: ${(props) => props.height};
 
-
   img {
     width: 48%;
     height: 10vh;
@@ -87,8 +85,8 @@ export const Flex = styled.div`
   //   padding: 2% 5%;
   // }
 
-  button{
-    background-color: #0A4076;
+  button {
+    background-color: #0a4076;
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
     color: #fff;
@@ -125,7 +123,7 @@ export const Grid = styled.div`
     padding: 2% 5%;
   }
 
-  @media screen and (max-width: 769px){
+  @media screen and (max-width: 769px) {
     width: 80%;
   }
 `;
@@ -153,12 +151,12 @@ export const Nav = styled.nav`
   background-color: #0a4076;
   position: fixed;
   z-index: 1;
-  top:0%;
+  top: 0%;
   // justify-content: space-evenly;
   // align-items: center;
   // width: 100%;
   // height: auto;
-  // 
+  //
 `;
 
 export const NavImg = styled.div`
@@ -170,22 +168,29 @@ export const NavImg = styled.div`
     border-radius: 50%;
     background-color: #fff;
   }
-
-
 `;
 
 export const NavLink = styled.div`
-  ul{
-    width: 70%
+  ul {
+    width: 100%;
   }
 
-  li{
+  li {
     font-weight: 500;
   }
+
+  @media screen and (max-width: 990px) {
+    ul.custom_style {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   @media screen and (max-width: 769px) {
     text-align: center;
-    ul{
-      width:100%;
+    ul {
+      width: 100%;
     }
   }
 `;
@@ -300,7 +305,11 @@ export const AboutFlex = styled.div`
 
       img {
         width: 50%;
-        height: 55vh;
+        height: 65vh;
+        
+        @media (max-width: 500px) {
+          height: 35vh;
+        }
       }
     }
     p {

@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../Images/photo_2022-06-11_15-53-30_1-removebg-preview.png";
-import { BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs";
-import { Ulist, NavImg, Nav, Navbutton, NavLink } from "./styles/learnStyles";
-import GlobalStyle from "./styles/GlobalStyle";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { Ulist, NavImg, Nav, NavLink } from "./styles/learnStyles";
 
 const Navbar = () => {
   return (
@@ -14,8 +12,6 @@ const Navbar = () => {
         <img src={logo} alt=" " />
       </NavImg>
 
-
-
       <button
         className="navbar-toggler"
         type="button"
@@ -25,28 +21,63 @@ const Navbar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-    <NavLink className="collapse navbar-collapse w-100 justify-content-evenly " id="collapsibleNavbar">
-      <ul className="navbar-nav d-grid-sm justify-content-evenly w-100">
-        <li className="nav-item">
-          <a className="nav-link text-light" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-light" href="#about">About Us</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-light" href="#faq">FAQ</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-light" href="#contact">Contact</a>
-        </li>
-      </ul>
+      <NavLink
+        className="collapse navbar-collapse w-100 justify-content-evenly "
+        id="collapsibleNavbar"
+      >
+        <ul className=" custom_style  navbar-nav d-grid-sm justify-content-evenly w-100">
+          <li className="nav-item">
+            <a className="nav-link text-light" href="/">
+              Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-light" href="#about">
+              About Us
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-light" href="#faq">
+              FAQ
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-light" href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
 
-      <Ulist  className="nav justify-content-center ">
-          <li className="nav-item"><a class="nav-link text-light link" href="https://web.facebook.com/OfficialPeersApp/" target='_blank '><BsFacebook /></a></li>
-          <li className="nav-item"><a class="nav-link text-light link" href="https://www.instagram.com/_peersapp/" target='_blank '><BsInstagram /></a></li>
-          <li className="nav-item"><a class="nav-link text-light link" href="https://twitter.com/_peersapp" target='_blank '><BsTwitter /></a></li>
-      </Ulist>
-    </NavLink>
+        <Ulist className="nav justify-content-center ">
+          <li className="nav-item">
+            <a
+              class="nav-link text-light link"
+              href="https://web.facebook.com/OfficialPeersApp/"
+              target="_blank "
+            >
+              <BsFacebook />
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              class="nav-link text-light link"
+              href="https://www.instagram.com/_peersapp/"
+              target="_blank "
+            >
+              <BsInstagram />
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              class="nav-link text-light link"
+              href="https://twitter.com/_peersapp"
+              target="_blank "
+            >
+              <BsTwitter />
+            </a>
+          </li>
+        </Ulist>
+      </NavLink>
 
       {/* <NavLink class="collapse navbar-collapse " id="collapsibleNavbar">
         <ul className="navbar-nav">
@@ -83,7 +114,7 @@ const Navbar = () => {
           <li className="nav-item"><a class="nav-link text-light link" href="https://twitter.com/_peersapp" target='_blank '><BsTwitter /></a></li>
         </ul> */}
 
-        {/* <Navbutton>
+      {/* <Navbutton>
           <button type="button" class="btn btn-sm btn-dark px-4">
             {" "}
             Login
@@ -99,4 +130,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
