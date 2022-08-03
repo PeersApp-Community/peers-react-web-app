@@ -46,7 +46,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 769px) {
-    margin-top: 15%;
+    margin-top: 10%;
     height: 100vh;
     h3 {
       font-size: 2rem;
@@ -443,17 +443,19 @@ export const Article = styled.div`
   p {
     width: 80%;
     margin: auto;
+    line-height: 1.8;
+    font-size: 1.0rem;
     transition: all 0.3s ease;
   }
 
   @media (max-width: 769px) {
-    width: 80%;
+    width: 100%;
     padding: 5% 1%;
 
     header {
       h5 {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         width: 100%;
         height: 10vh;
@@ -462,12 +464,16 @@ export const Article = styled.div`
       }
     }
 
+    p{
+      font-size:0.8rem;
+    }
+
     span {
       font-size: 1.3rem;
     }
   }
 `;
-//  DOWNDLOAD SECTION
+//  DOWNLOAD SECTION
 export const DownloadImg = styled.div`
   display: flex;
   img {
@@ -545,7 +551,7 @@ export const FooterFlex = styled.div`
   align-items: start;
   height: 50vh;
   margin-top: 5%;
-  padding: 3% 3%;
+  padding: 5% 3%;
   background: #efefef;
 
   @media (max-width: 769px) {

@@ -32,8 +32,7 @@ const FAQ = () => {
                 creating a link between social networking and creating
                 educational opportunities. With PeersApp, you can communicate
                 with course mates, carry out group projects, store and access
-                learning materials, view the status of other students, have
-                access to empowerment opportunities and lots more.
+                learning materials, view the status of other students and lots more.
               </p>
             )}
           </Article>
@@ -89,7 +88,7 @@ const FAQ = () => {
 
             {!toggle3 && (
               <p>
-                You sign up with your email address, phone number and a password chosen by
+                You sign up with your phone number and a password chosen by
                 you. An OTP will be sent to your number, you input
                 that and it's done! You can finish setting up your profile
                 afterwards or when convenient.
