@@ -1,5 +1,5 @@
 import React from 'react'
-import {Copyright, Flex, FooterFlex, FooterSection, Section, Ulist } from './styles/learnStyles'
+import {Copyright, FooterFlex, FooterSection, Section, Ulist } from './styles/learnStyles'
 // import {Link} from 'react-router-dom';
 const Footer = () => {
   return (
