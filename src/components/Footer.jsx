@@ -11,10 +11,10 @@ const Footer = () => {
                 Learn | Network | Redefine
             <br/>Your School Experience
             </p>
-            <Flex padding="5% 0%" width="100%" justify='space-between' >
+            {/* <Flex padding="5% 0%" width="100%" justify='space-between' >
                 <input type="email" placeholder='email address' />
                 <button>Register</button>
-            </Flex>
+            </Flex> */}
         </FooterSection>
         <FooterSection>
             <h4>Quick Links</h4>
