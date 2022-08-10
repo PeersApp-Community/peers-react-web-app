@@ -1,5 +1,5 @@
 import React from 'react'
-import {Copyright, Flex, FooterFlex, FooterSection, Section, Ulist } from './styles/learnStyles'
+import {Copyright, FooterFlex, FooterSection, Section, Ulist } from './styles/learnStyles'
 // import {Link} from 'react-router-dom';
 const Footer = () => {
   return (
@@ -11,10 +11,10 @@ const Footer = () => {
                 Learn | Network | Redefine
             <br/>Your School Experience
             </p>
-            <Flex padding="5% 0%" width="100%" justify='space-between' >
+            {/* <Flex padding="5% 0%" width="100%" justify='space-between' >
                 <input type="email" placeholder='email address' />
                 <button>Register</button>
-            </Flex>
+            </Flex> */}
         </FooterSection>
         <FooterSection>
             <h4>Quick Links</h4>
